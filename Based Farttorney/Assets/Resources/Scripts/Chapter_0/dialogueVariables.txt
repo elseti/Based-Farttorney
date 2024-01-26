@@ -1,0 +1,12 @@
+string eri Erika
+string ony Onyx
+string sie Siena
+string lyn Lynch
+string luc Lucian
+string mal Malorie
+string q ???
+string nix Phoenix
+bool playerStarted true
+int count 1
+float waitTime 3.0
+int vr_room_interaction_count 0

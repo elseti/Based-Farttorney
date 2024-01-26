@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a9d1e752c5f40a5a7a62cb13121c2b, type: 3}
+  m_Name: ActionConstants
+  m_EditorClassIdentifier: 
+  actionList:
+  - switchCamera
+  - showChar
+  - hideChar
+  - showBg
+  - hideBg
+  - playSfx
+  - stopSfx
+  - playBgm
+  - stopBgm
+  - playVoice
+  - stopVoice
+  - showChoices
+  - hideChoices
+  - showCanvas
+  - hideCanvas
+  - wait
+  - fadein
+  - fadeout
+  - show
+  - hide
+  - playScript
+  - loadScene
+  - setString
+  - setBool
+  - setInt
+  - setFloat
+  - increment
+  - decrement
+  - compare
