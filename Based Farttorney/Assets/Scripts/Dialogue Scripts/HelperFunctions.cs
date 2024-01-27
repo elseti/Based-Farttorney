@@ -58,8 +58,9 @@ namespace DefaultNamespace
         public static (string[], string[]) ParseChoices(string[] parameterList)
         {
             // convert it all back to a single string
-            string parameterString = String.Join("", parameterList);
-            string[] splitList = parameterString.Split(",");
+            string parameterString = String.Join(" ", parameterList);
+            Debug.Log(parameterString);
+            string[] splitList = parameterString.Split("|");
             
             // split to choiceText and choiceScript
             string[] choiceTextList = new string[splitList.Length];
@@ -69,8 +70,10 @@ namespace DefaultNamespace
             {
                 string choiceText = splitList[x].Split(":")[0];
                 string choiceScript = splitList[x].Split(":")[1];
-                choiceTextList[x] = choiceText;
-                choiceScriptList[x] = choiceScript;
+                Debug.Log("choicetext " + choiceText);
+                Debug.Log("choicescript " + choiceScript);
+                choiceTextList[x] = choiceText.Trim();
+                choiceScriptList[x] = choiceScript.Trim();
             }
 
             return (choiceTextList, choiceScriptList);

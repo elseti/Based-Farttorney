@@ -1249,7 +1249,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 1
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1337,10 +1337,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 371ba224a3254a5cbd49884958a24693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spritePos1: {fileID: 0}
-  spritePos2: {fileID: 0}
-  spritePos3: {fileID: 0}
-  sidePos: {fileID: 0}
+  barkeepPos: {fileID: 746035085}
+  ladyPos: {fileID: 613428624}
+  oldManPos: {fileID: 2104209201}
+  jockPos: {fileID: 1119163505}
   canvasGroup: {fileID: 1044887848}
   blackCanvas: {fileID: 1123636434}
   textBox: {fileID: 1454405939}
@@ -5039,7 +5039,7 @@ MonoBehaviour:
     m_VirtualCamera: {fileID: 417608406}
     m_ActivateAfter: 0
     m_MinDuration: 0
-  - m_FullHash: 1023083227
+  - m_FullHash: -1197169433
     m_VirtualCamera: {fileID: 1778599169}
     m_ActivateAfter: 0
     m_MinDuration: 0
@@ -5068,7 +5068,7 @@ MonoBehaviour:
     m_ParentHash: 756556552
   - m_Hash: 732508606
     m_ParentHash: 756556552
-  - m_Hash: 1023083227
+  - m_Hash: -1197169433
     m_ParentHash: 756556552
   - m_Hash: 181880171
     m_ParentHash: 756556552
@@ -5279,6 +5279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2104209200}
   - component: {fileID: 2104209201}
+  - component: {fileID: 2104209202}
   m_Layer: 0
   m_Name: OldMan
   m_TagString: Untagged
@@ -5286,21 +5287,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2104209200
-Transform:
+--- !u!224 &2104209200
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104209199}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.27, y: 2.09, z: 722.93}
+  m_LocalPosition: {x: 0, y: 0, z: 722.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1315717920}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 18.27, y: 2.09}
+  m_SizeDelta: {x: 14.43, y: 18.31}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &2104209201
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5353,6 +5358,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!222 &2104209202
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104209199}
+  m_CullTransparentMesh: 1
 --- !u!1 &2128552408
 GameObject:
   m_ObjectHideFlags: 0

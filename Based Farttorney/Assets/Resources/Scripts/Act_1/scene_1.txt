@@ -1,3 +1,5 @@
+hideCanvas
+
 switchCamera Black 0
 
 wait 1
@@ -5,6 +7,8 @@ wait 1
 playSfx fart02
 
 wait 1.5
+
+show jock/angry jock
 
 switchCamera Jock
 
@@ -14,6 +18,8 @@ showCanvas
 
 [j]
 …
+
+show lady/judge lady
 
 switchCamera Lady
 
@@ -37,6 +43,8 @@ switchCamera Idle
 
 [r]
 Why *burp* is everyone staring at me?
+
+show jock/accusing jock
 
 switchCamera Jock
 
@@ -67,6 +75,8 @@ I need to get out of here without drawing attention to myself, but they all thin
 null
 I mean, I DID, but they don’t need to know that!
 
+switchCamera OldMan
+
 [p]
 It was a loud one too, hehe… *sniffs* and it sounded real wet. Smells like someone had apple pie for dessert?
 
@@ -75,17 +85,29 @@ Wasn’t me!
 
 switchCamera Jock
 
+show jock/angry jock
+
 [j]
 Dude, we all know it was you. It came from your side of the room!
+
+switchCamera Lady
+
+show lady/disgusted lady
 
 [w]
 This is gross. I didn’t come here to sit next to perverts and creeps who **** themselves.
 
+switchCamera OldMan
+
 [p]
 Yeah! This is supposed to be a classy establishment for cheap beer and even cheaper women!
 
+switchCamera Lady
+
 [w]
 …
+
+switchCamera Barkeep
 
 [b]
 I hear you, ma’am.
@@ -106,7 +128,9 @@ null
 Okay, Ron. You’ve drank an insane amount of alcohol but you can’t get kicked out now. 
 
 null
-You’re smart. You’re a lawyer, dammit. Not just a lawyer - I’m a goddamn ATTORNEY.
+You’re smart. You’re a lawyer, dammit. Not just a lawyer - I’m a goddamn DEFENSE ATTORNEY.
 
 null
 Time to come up with a perfectly logical reason as to why I shouldn’t leave.
+
+choice I **** MYSELF:Scripts/choice1_ans1 | Someone glued my ass to the chair:Scripts/Act_1/choice1_ans1 | I didn’t fart, so why should I leave?:Scripts/Act_1/choice1_ans1 | *vomit everywhere* : Scripts/Act_1/choice1_ans1

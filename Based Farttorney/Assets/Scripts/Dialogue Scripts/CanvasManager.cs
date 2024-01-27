@@ -12,11 +12,11 @@ using UnityEditor.Build.Content;
 public class CanvasManager : MonoBehaviour
 {
     // Sprite or images - TODO: make them all an array/list so modular
-    public GameObject spritePos1;
-    public GameObject spritePos2;
-    public GameObject spritePos3;
-    // public GameObject spritePos4;
-    public GameObject sidePos;
+    public SpriteRenderer barkeepPos;
+    public SpriteRenderer ladyPos;
+    public SpriteRenderer oldManPos;
+    public SpriteRenderer jockPos;
+    
     
     // Canvas group to fade in/out
     public CanvasGroup canvasGroup;
@@ -67,28 +67,24 @@ public class CanvasManager : MonoBehaviour
 
         switch (parameterList[1])
         {
-            case "left":
-                Image pos1 = spritePos1.GetComponent<Image>();
-                SetAlpha(pos1, 1f);
-                pos1.sprite = sprite;
+            case "barkeep":
+                SetAlphaSprite(barkeepPos, 1f);
+                barkeepPos.sprite = sprite;
                 break;
 
-            case "center":
-                Image pos2 = spritePos2.GetComponent<Image>();
-                SetAlpha(pos2, 1f);
-                pos2.sprite = sprite;
+            case "lady":
+                SetAlphaSprite(ladyPos, 1f);
+                ladyPos.sprite = sprite;
                 break;
 
-            case "right":
-                Image pos3 = spritePos3.GetComponent<Image>();
-                SetAlpha(pos3, 1f);
-                pos3.sprite = sprite;
+            case "oldMan":
+                SetAlphaSprite(oldManPos, 1f);
+                oldManPos.sprite = sprite;
                 break;
             
-            case "side":
-                Image pos = sidePos.GetComponent<Image>();
-                SetAlpha(pos, 1f);
-                pos.sprite = sprite;
+            case "jock":
+                SetAlphaSprite(jockPos, 1f);
+                jockPos.sprite = sprite;
                 break;
 
             default:
@@ -109,27 +105,27 @@ public class CanvasManager : MonoBehaviour
 
         switch (parameterList[0])
         {
-            case "left":
-                SetAlpha(spritePos1.GetComponent<Image>(), 0f);
+            case "barkeep":
+                SetAlphaSprite(barkeepPos, 0f);
                 break;
 
-            case "center":
-                SetAlpha(spritePos2.GetComponent<Image>(), 0f);
+            case "lady":
+                SetAlphaSprite(ladyPos, 0f);
                 break;
 
-            case "right":
-                SetAlpha(spritePos3.GetComponent<Image>(), 0f);
+            case "oldMan":
+                SetAlphaSprite(oldManPos, 0f);
                 break;
             
-            case "side":
-                SetAlpha(sidePos.GetComponent<Image>(), 0f);
+            case "jock":
+                SetAlphaSprite(jockPos, 0f);
                 break;
             
             case "all":
-                SetAlpha(spritePos1.GetComponent<Image>(), 0f);
-                SetAlpha(spritePos2.GetComponent<Image>(), 0f);
-                SetAlpha(spritePos3.GetComponent<Image>(), 0f);
-                SetAlpha(sidePos.GetComponent<Image>(), 0f);
+                SetAlphaSprite(barkeepPos, 0f);
+                SetAlphaSprite(ladyPos, 0f);
+                SetAlphaSprite(oldManPos, 0f);
+                SetAlphaSprite(jockPos, 0f);
                 break;
             
             default:
@@ -177,6 +173,8 @@ public class CanvasManager : MonoBehaviour
     {
         ShowChoices();
         float buttonGap = 120f;
+        speakerBox.gameObject.SetActive(false);
+        textBox.gameObject.SetActive(false);
         DialogueManager.instance.canClick = false;
         for (int x = 0; x < choiceTextList.Length; x++)
         {
@@ -193,17 +191,26 @@ public class CanvasManager : MonoBehaviour
     public void PlayScriptAfterChoice(string script)
     {
         // print("played script " + script);
+        speakerBox.gameObject.SetActive(true);
+        textBox.gameObject.SetActive(true);
         DialogueManager.instance.LoadDialogueList(script);
         DialogueManager.instance.canClick = true;
         HideChoices();
     }
     
     // HELPER FUNCTIONS
-    private void SetAlpha(Image image, float alphaValue)
+    public void SetAlphaImage(Image image, float alphaValue)
     {
         Color currentColor = image.color;
         currentColor.a = alphaValue;
         image.color = currentColor;
+    }
+    
+    public void SetAlphaSprite(SpriteRenderer spriteRenderer, float alpha)
+    {
+        Color currentColor = spriteRenderer.material.color;
+        currentColor.a = Mathf.Clamp01(alpha);
+        spriteRenderer.material.color = currentColor;
     }
     
     private IEnumerator IncreaseAlphaImageCoroutine(CanvasGroup canvas, float multiplier){

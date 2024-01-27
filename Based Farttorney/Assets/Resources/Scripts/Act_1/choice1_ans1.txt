@@ -1,0 +1,27 @@
+showCanvas
+
+[b]
+It wasn’t you?
+
+[r]
+No! I’ve been *burrrp* framed!
+
+switchCamera Lady
+
+[w]
+Nice try. Well, if it wasn’t you, then who was it?
+
+switchCamera OldMan
+
+[p]
+I bet it was the lovely madame. It would certainly explain why the smell was more… *ahem* fragrant than normal.
+
+switchCamera Lady
+
+[w]
+Ew! What the hell?
+
+switchCamera Jock
+
+[j]
+Cut the crap. It was you and we all know it.

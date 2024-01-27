@@ -110,7 +110,17 @@ public class DialogueManager : Singleton<DialogueManager>
         canvasManager.textBoxText.text = "";
         string speakerName = _currDialogueList[_currDialogueIndex].GetName();
         string speakerText = _currDialogueList[_currDialogueIndex].GetText();
-        canvasManager.speakerBoxText.text = speakerName;
+        if (speakerName == "")
+        {
+            canvasManager.SetAlphaImage(canvasManager.speakerBox, 0f);
+            canvasManager.speakerBoxText.text = "";
+        }
+        else
+        {
+            canvasManager.SetAlphaImage(canvasManager.speakerBox, 1f);
+            canvasManager.speakerBoxText.text = speakerName;
+        }
+        
 
         // Start the coroutine and store a reference to it
         canvasManager.typingCoroutine = StartCoroutine(canvasManager.TypeText(speakerText, _cps, audioManager.interfaceAudio, _typingSfx));
@@ -158,10 +168,11 @@ public class DialogueManager : Singleton<DialogueManager>
         // reset index 
         audioManager.interfaceAudio.Stop();
         _currDialogueIndex = -1;
+        // _currDialogueIndex = 0;
         _currDialogueList = null;
 
         // hide all boxes
-        canvasManager.HideCanvas();
+        // canvasManager.HideCanvas();
         
         // clear all text
         canvasManager.speakerBoxText.text = "";
