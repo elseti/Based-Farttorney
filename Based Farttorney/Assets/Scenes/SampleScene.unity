@@ -1420,7 +1420,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 9c4a44604bd8145aeb932a955f532c41, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 64f228305e22d40bb9c98c99f0ef92e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1514,7 +1514,7 @@ GameObject:
   - component: {fileID: 746035084}
   - component: {fileID: 746035085}
   m_Layer: 0
-  m_Name: Jock
+  m_Name: Barkeep
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2361,7 +2361,7 @@ GameObject:
   - component: {fileID: 1119163504}
   - component: {fileID: 1119163505}
   m_Layer: 0
-  m_Name: Barkeep
+  m_Name: Jock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2423,7 +2423,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 9c4a44604bd8145aeb932a955f532c41, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 50a4fa3f317b14122a46bef1c5e605d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3887,9 +3887,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Gameplay_Scripts.FartButton, Assembly-CSharp
-        m_MethodName: FartButtonPressed
+      - m_Target: {fileID: 1789362321}
+        m_TargetAssemblyTypeName: Gameplay_Scripts.VomitButton, Assembly-CSharp
+        m_MethodName: VomitButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3950,7 +3950,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveButton: {fileID: 1789362318}
-  moveSpeed: 9000
+  moveSpeed: 500
+  vomitSfx: {fileID: 8300000, guid: 24e7fbc45c05741d49f3d53d69a038bd, type: 3}
 --- !u!1 &1816910486
 GameObject:
   m_ObjectHideFlags: 0

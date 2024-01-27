@@ -1,5 +1,7 @@
 showCanvas
 
+wait 2
+
 [k]
 I wrote better virtual reality programs back when this kid was still wearing diapers!
 
@@ -8,6 +10,8 @@ Relax, it's a cheap copy. I used to create virtual clones of myself all the time
 
 Duke
 Why duel yourself?
+
+switchCamera Jock
 
 [k]
 Who better?

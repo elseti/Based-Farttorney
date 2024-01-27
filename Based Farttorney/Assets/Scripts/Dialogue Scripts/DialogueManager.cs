@@ -66,8 +66,13 @@ public class DialogueManager : Singleton<DialogueManager>
         {
             if (_currDialogueList != null)
             {
-                // if typing coroutine not done, make it done
-                if (!canvasManager.typingDone)
+                // // if typing coroutine not done, make it done
+                // if (!canvasManager.typingDone)
+                // {
+                //     StopCoroutine(canvasManager.typingCoroutine);
+                //     canvasManager.SetDialogueText(_currDialogueList[_currDialogueIndex].GetText());
+                // }
+                if (!canvasManager.typingDone && canvasManager.typingCoroutine != null)
                 {
                     StopCoroutine(canvasManager.typingCoroutine);
                     canvasManager.SetDialogueText(_currDialogueList[_currDialogueIndex].GetText());
@@ -76,7 +81,9 @@ public class DialogueManager : Singleton<DialogueManager>
                 {
                     NextDialogue();
                 }
+                
             }
+            
         }
 
         // TODO: backtrack
@@ -94,11 +101,12 @@ public class DialogueManager : Singleton<DialogueManager>
 
     private void PlayDialogue()
     {
+
         if (canvasManager.typingCoroutine != null)
         {
             StopCoroutine(canvasManager.typingCoroutine);
         }
-        
+    
         canvasManager.textBoxText.text = "";
         string speakerName = _currDialogueList[_currDialogueIndex].GetName();
         string speakerText = _currDialogueList[_currDialogueIndex].GetText();
@@ -106,6 +114,8 @@ public class DialogueManager : Singleton<DialogueManager>
 
         // Start the coroutine and store a reference to it
         canvasManager.typingCoroutine = StartCoroutine(canvasManager.TypeText(speakerText, _cps, audioManager.interfaceAudio, _typingSfx));
+    
+        
     }
 
     
@@ -128,7 +138,7 @@ public class DialogueManager : Singleton<DialogueManager>
                 // check if it is an Action
                 if(_currDialogueList[_currDialogueIndex].GetAction() != null)
                 {
-                    // print("ACTION " + _currDialogueList[_currDialogueIndex].GetAction().GetActionName() + " PLAYED!");
+                    print("ACTION " + _currDialogueList[_currDialogueIndex].GetAction().GetActionName() + " PLAYED!");
                     // TODO- if(action cannot be clicked to continue...):
                 
                     PlayAction(_currDialogueList[_currDialogueIndex].GetAction());
