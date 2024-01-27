@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using Action = Dialogue_Scripts.Action;
 
 public class DialogueManager : Singleton<DialogueManager>
@@ -46,7 +47,8 @@ public class DialogueManager : Singleton<DialogueManager>
     public CameraManager cameraManager;
     
     // control variables
-    private bool _canClick = true;
+    [HideInInspector]
+    public bool canClick = true;
     
     
     private void Start()
@@ -60,7 +62,7 @@ public class DialogueManager : Singleton<DialogueManager>
     private void Update()
     {
         // TODO - touch screen input
-        if ((Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) && _canClick)
+        if ((Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) && canClick)
         {
             if (_currDialogueList != null)
             {
@@ -118,7 +120,7 @@ public class DialogueManager : Singleton<DialogueManager>
         }
         else
         {
-            if (_canClick)
+            if (canClick)
             {
                 audioManager.interfaceAudio.PlayOneShot(_dialogueContinueSfx);
                 _currDialogueIndex++;
@@ -300,6 +302,11 @@ public class DialogueManager : Singleton<DialogueManager>
                 else throw new Exception("@compare: Incorrect number of arguments. Expected 4, got " + parameterList.Length + ". Usage: compare [variable compared to] [operand] [compared value] [script path played if true]");
                 break;
             
+            case "choice":
+                (string[], string[]) choiceParserResult = HelperFunctions.ParseChoices(parameterList);
+                canvasManager.AddChoiceBox(choiceParserResult.Item1, choiceParserResult.Item2);
+                break;
+            
             default:
                 Debug.LogError("@CanvasManager.cs, PlayAction(): No such method " + actionName + ". If you created a custom function, don't forget to add a case here, or update the ActionConstants asset.");
                 break;
@@ -331,10 +338,10 @@ public class DialogueManager : Singleton<DialogueManager>
 
     private IEnumerator WaitCoroutine(float waitTime)
     {
-        _canClick = false;
+        canClick = false;
         audioManager.interfaceAudio.PlayOneShot(_silenceSfx);
         yield return new WaitForSeconds(waitTime);
-        _canClick = true;
+        canClick = true;
     }
 
     private void LoadScene(string sceneName)

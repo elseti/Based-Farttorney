@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEditor.Build.Content;
 
 /*
  * CanvasManager manages all dialogue/sprite/BG-related UI.
@@ -28,6 +29,10 @@ public class CanvasManager : MonoBehaviour
     // Dialogue Text
     public TextMeshProUGUI textBoxText;
     public TextMeshProUGUI speakerBoxText;
+    
+    // Choice boxes
+    public Transform choiceLocation;
+    public GameObject choiceBox;
     
     // Coroutine for typing dialogue text
     public Coroutine typingCoroutine;
@@ -142,6 +147,16 @@ public class CanvasManager : MonoBehaviour
     {
         canvasGroup.gameObject.SetActive(true);
     }
+
+    public void ShowChoices()
+    {
+        choiceLocation.gameObject.SetActive(true);
+    }
+
+    public void HideChoices()
+    {
+        choiceLocation.gameObject.SetActive(false);
+    }
     
     // Fade in, fade out
     public void FadeOut(){
@@ -152,6 +167,36 @@ public class CanvasManager : MonoBehaviour
         StartCoroutine(DecreaseAlphaImageCoroutine(blackCanvas, 0.005f));   
     }
     
+    public void SetDialogueText(string fullText)
+    {
+        textBoxText.text = fullText;
+        typingDone = true;
+    }
+
+    public void AddChoiceBox(string[] choiceTextList, string[] choiceScriptList)
+    {
+        ShowChoices();
+        float buttonGap = 120f;
+        DialogueManager.instance.canClick = false;
+        for (int x = 0; x < choiceTextList.Length; x++)
+        {
+            GameObject choice = Instantiate(choiceBox, choiceLocation);
+            choice.SetActive(true);
+            choice.transform.localPosition = new Vector3(0, x * -buttonGap, 0);
+            choice.GetComponentInChildren<TextMeshProUGUI>().text = choiceTextList[x];
+            var x1 = x;
+            choice.GetComponent<Button>().onClick.AddListener(() => PlayScriptAfterChoice(choiceScriptList[x1]));
+        }
+    }
+
+
+    public void PlayScriptAfterChoice(string script)
+    {
+        // print("played script " + script);
+        DialogueManager.instance.LoadDialogueList(script);
+        DialogueManager.instance.canClick = true;
+        HideChoices();
+    }
     
     // HELPER FUNCTIONS
     private void SetAlpha(Image image, float alphaValue)
@@ -160,8 +205,6 @@ public class CanvasManager : MonoBehaviour
         currentColor.a = alphaValue;
         image.color = currentColor;
     }
-    
-    
     
     private IEnumerator IncreaseAlphaImageCoroutine(CanvasGroup canvas, float multiplier){
         for (float alpha = 1f; alpha >= -0.05f; alpha -= 0.05f)
@@ -184,16 +227,10 @@ public class CanvasManager : MonoBehaviour
         Time.timeScale = 1.0f;
     }
 
-    public void SetDialogueText(string fullText)
-    {
-        textBoxText.text = fullText;
-        typingDone = true;
-    }
-    
+   
     public IEnumerator TypeText(string fullText, float cps, AudioSource interfaceAudio, AudioClip typingSfx)
     {
         typingDone = false;
-        print("typing is false");
         foreach (char c in fullText)
         {
             // TODO- make function such that if dialogue is not done but button is pressed typing sound will stop...
@@ -206,7 +243,6 @@ public class CanvasManager : MonoBehaviour
             yield return new WaitForSeconds(1f / cps);
         }
         typingDone = true;
-        print("typing is true");
         
         // Reset the coroutine reference when the typing is done
         typingCoroutine = null;

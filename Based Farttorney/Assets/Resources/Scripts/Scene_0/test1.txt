@@ -12,6 +12,8 @@ Why duel yourself?
 [k]
 Who better?
 
+choice This is Choice 1:Scripts/Scene_0/test1, This is Choice 2:Scripts/Scene_0/test2, This is Choice 3:Scripts/Scene_0/test2
+
 [k]
 Someone shows you a chicken scratch on an old rock and you use it to dictate your life!?
 

@@ -1,0 +1,6 @@
+showCanvas
+
+[k]
+Hello World!
+
+hideCanvas

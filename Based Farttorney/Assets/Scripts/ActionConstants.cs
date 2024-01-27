@@ -35,6 +35,7 @@ public class ActionConstants : ScriptableObject
         "setFloat",
         "increment",
         "decrement",
-        "compare"
+        "compare",
+        "choice"
     };
 }

@@ -1,4 +1,6 @@
 using System;
+using Unity.VisualScripting.FullSerializer;
+using UnityEngine;
 
 namespace DefaultNamespace
 {
@@ -50,6 +52,28 @@ namespace DefaultNamespace
             int intValue;
             if (int.TryParse(str, out intValue)) return intValue;
             throw new Exception("Parsing to int failed");
+        }
+        
+        // used in "choice" action; converts "choiceText:choiceAction" to two different arrays
+        public static (string[], string[]) ParseChoices(string[] parameterList)
+        {
+            // convert it all back to a single string
+            string parameterString = String.Join("", parameterList);
+            string[] splitList = parameterString.Split(",");
+            
+            // split to choiceText and choiceScript
+            string[] choiceTextList = new string[splitList.Length];
+            string[] choiceScriptList = new string[splitList.Length];
+            
+            for(int x = 0; x < splitList.Length; x++)
+            {
+                string choiceText = splitList[x].Split(":")[0];
+                string choiceScript = splitList[x].Split(":")[1];
+                choiceTextList[x] = choiceText;
+                choiceScriptList[x] = choiceScript;
+            }
+
+            return (choiceTextList, choiceScriptList);
         }
     }
 }
