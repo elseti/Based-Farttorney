@@ -25,12 +25,15 @@ public class MenuController : MonoBehaviour
     void Start()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
-        StartCoroutine(FadeMessages());
+
+        if (_msgLose != null && _msgTryAgain != null && _btnTryAgain != null)
+            StartCoroutine(FadeMessages());
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        StartCoroutine(FadeMessages());
+        if (_msgLose != null && _msgTryAgain != null && _btnTryAgain != null)
+            StartCoroutine(FadeMessages());
     }
 
     IEnumerator FadeMessages()
