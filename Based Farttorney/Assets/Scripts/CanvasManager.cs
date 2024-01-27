@@ -14,6 +14,7 @@ public class CanvasManager : MonoBehaviour
     public GameObject spritePos1;
     public GameObject spritePos2;
     public GameObject spritePos3;
+    public GameObject spritePos4;
     public GameObject sidePos;
     
     // Canvas group to fade in/out

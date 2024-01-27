@@ -1,0 +1,34 @@
+showCanvas
+
+[k]
+I wrote better virtual reality programs back when this kid was still wearing diapers!
+
+[t]
+Relax, it's a cheap copy. I used to create virtual clones of myself all the time to duel against.
+
+Duke
+Why duel yourself?
+
+[k]
+Who better?
+
+[k]
+Someone shows you a chicken scratch on an old rock and you use it to dictate your life!?
+
+[k]
+I've had about all I can take of you people so leave me alone and have a nice life!
+
+switchCamera Black 2
+
+wait 2
+
+[k]
+*laughing*
+
+Pegasus
+I must have missed a joke.
+
+[k]
+You are a joke, Pegasus.
+
+hideCanvas
