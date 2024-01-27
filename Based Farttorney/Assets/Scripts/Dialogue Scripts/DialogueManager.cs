@@ -61,7 +61,7 @@ public class DialogueManager : Singleton<DialogueManager>
 
     private void Update()
     {
-        // TODO - touch screen input
+        // TODO - DISABLE RETURN AND SPACE
         if ((Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) && canClick)
         {
             if (_currDialogueList != null)

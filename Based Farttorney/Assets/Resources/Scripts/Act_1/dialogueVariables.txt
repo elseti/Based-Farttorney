@@ -1,0 +1,5 @@
+string j Jock
+string w Woman
+string p Pervert
+string b Barkeep
+string r Ron
