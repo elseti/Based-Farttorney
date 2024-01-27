@@ -12,21 +12,23 @@ namespace Gameplay_Scripts
         public AudioClip fartSfx;
         public float minAppearDuration = 1f;
         public float maxAppearDuration = 5f;
+        public float minHideDuration = 1f;
+        public float maxHideDuration = 10f;
 
-        private Coroutine appearCoroutine;
+        private Coroutine _appearCoroutine;
         
         private void Update()
         {
-            if (Random.Range(0, 1) < 0.2 && appearCoroutine == null)
+            if (Random.Range(0, 1) < 0.2 && _appearCoroutine == null)
             {
-                appearCoroutine = StartCoroutine(AppearCoroutine(Random.Range(minAppearDuration, maxAppearDuration)));
-                ShowFartButton();
+                _appearCoroutine = StartCoroutine(AppearCoroutine(Random.Range(minAppearDuration, maxAppearDuration), Random.Range(minHideDuration, maxHideDuration)));
             }
         }
         
         public void FartButtonPressed()
         {
             this.gameObject.GetComponent<AudioSource>().PlayOneShot(fartSfx);
+            DialogueManager.instance.GameOver("fart");
         }
 
         private void ShowFartButton()
@@ -38,17 +40,19 @@ namespace Gameplay_Scripts
         }
         private void HideFartButton()
         {
-            // this.transform.localPosition = GetRandomPosition(1920f, 1080f);
             this.gameObject.GetComponentInChildren<TextMeshProUGUI>().enabled = false;
             this.gameObject.GetComponent<Button>().enabled = false;
             this.gameObject.GetComponent<Image>().enabled = false;
         }
         
-        private IEnumerator AppearCoroutine(float seconds){
-            print("appear coroutine");
+        private IEnumerator AppearCoroutine(float appearTime, float hideTime){
             ShowFartButton();
-            yield return new WaitForSecondsRealtime(seconds);
-            appearCoroutine = null;
+            yield return new WaitForSecondsRealtime(appearTime);
+            
+            HideFartButton();
+            yield return new WaitForSecondsRealtime(hideTime);
+            
+            _appearCoroutine = null;
         }
         
         // get a random position within canvas size
@@ -56,6 +60,8 @@ namespace Gameplay_Scripts
         {
             return new Vector3(Random.Range(-width, width), Random.Range(-height, height), 0);
         }
+        
+        // TODO - resize button randomly
 
         
         

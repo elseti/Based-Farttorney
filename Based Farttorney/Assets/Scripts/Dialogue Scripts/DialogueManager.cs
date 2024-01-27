@@ -313,7 +313,6 @@ public class DialogueManager : Singleton<DialogueManager>
         }
     }
     
-    
     // HELPER FUNCTIONS
     
     private void LoadDialogueConstants()
@@ -353,6 +352,28 @@ public class DialogueManager : Singleton<DialogueManager>
         catch
         {
             throw new Exception("@LoadScene: Scene " + sceneName + " does not exist!");
+        }
+    }
+    
+    
+    // GAMEPLAY FUNCTIONS
+    public void GameOver(string ending)
+    {
+        canvasManager.HideCanvas();
+        canvasManager.HideChoices();
+        audioManager.bgmAudio.Stop();
+        EndDialogue();
+        
+        cameraManager.SwitchCamera("Black", 3f);
+        StartCoroutine(WaitCoroutine(3f));
+        switch (ending)
+        {
+            case "fart":
+                break;
+            
+            case "vomit":
+                break;
+            
         }
     }
 
