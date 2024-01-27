@@ -64,7 +64,16 @@ public class DialogueManager : Singleton<DialogueManager>
         {
             if (_currDialogueList != null)
             {
-                NextDialogue();
+                // if typing coroutine not done, make it done
+                if (!canvasManager.typingDone)
+                {
+                    StopCoroutine(canvasManager.typingCoroutine);
+                    canvasManager.SetDialogueText(_currDialogueList[_currDialogueIndex].GetText());
+                }
+                else
+                {
+                    NextDialogue();
+                }
             }
         }
 

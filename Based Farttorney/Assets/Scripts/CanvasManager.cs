@@ -14,7 +14,7 @@ public class CanvasManager : MonoBehaviour
     public GameObject spritePos1;
     public GameObject spritePos2;
     public GameObject spritePos3;
-    public GameObject spritePos4;
+    // public GameObject spritePos4;
     public GameObject sidePos;
     
     // Canvas group to fade in/out
@@ -31,6 +31,9 @@ public class CanvasManager : MonoBehaviour
     
     // Coroutine for typing dialogue text
     public Coroutine typingCoroutine;
+    
+    // if typing coroutine is done or not
+    [HideInInspector] public bool typingDone;
 
     private void Start()
     {
@@ -180,12 +183,21 @@ public class CanvasManager : MonoBehaviour
         canvas.gameObject.SetActive(false);
         Time.timeScale = 1.0f;
     }
+
+    public void SetDialogueText(string fullText)
+    {
+        textBoxText.text = fullText;
+        typingDone = true;
+    }
     
     public IEnumerator TypeText(string fullText, float cps, AudioSource interfaceAudio, AudioClip typingSfx)
     {
+        typingDone = false;
+        print("typing is false");
         foreach (char c in fullText)
         {
             // TODO- make function such that if dialogue is not done but button is pressed typing sound will stop...
+            
             if (typingSfx != null)
             {
                 interfaceAudio.PlayOneShot(typingSfx);
@@ -193,7 +205,9 @@ public class CanvasManager : MonoBehaviour
             textBoxText.text += c;
             yield return new WaitForSeconds(1f / cps);
         }
-
+        typingDone = true;
+        print("typing is true");
+        
         // Reset the coroutine reference when the typing is done
         typingCoroutine = null;
     }
