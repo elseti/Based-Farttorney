@@ -91,8 +91,6 @@ public class DialogueManager : Singleton<DialogueManager>
 
     public void LoadDialogueList(string path)
     {
-        print("_currDialogueIndex" + _currDialogueIndex);
-        print("canclick" + canClick);
         EndDialogue();
         List<Dialogue> unAssignedDialogueList = DialogueRecords.LoadDialogueList(path);
         _currDialogueList = variableManager.AssignVariablesToDialogues(unAssignedDialogueList);
@@ -102,8 +100,6 @@ public class DialogueManager : Singleton<DialogueManager>
 
     private void PlayDialogue()
     {
-        print("typing corooutine: " + canvasManager.typingCoroutine);
-        print("playdialogue index" + _currDialogueIndex);
         if (canvasManager.typingCoroutine != null)
         {
             StopCoroutine(canvasManager.typingCoroutine);
@@ -112,7 +108,7 @@ public class DialogueManager : Singleton<DialogueManager>
         canvasManager.textBoxText.text = "";
         string speakerName = _currDialogueList[_currDialogueIndex].GetName();
         string speakerText = _currDialogueList[_currDialogueIndex].GetText();
-        print(speakerName+ " "+ speakerText);
+        
         if (speakerName == "")
         {
             canvasManager.SetAlphaImage(canvasManager.speakerBox, 0f);
@@ -275,7 +271,11 @@ public class DialogueManager : Singleton<DialogueManager>
                 break;
             
             case "playScript":
-                if (parameterList.Length == 1) LoadDialogueList(parameterList[0]);
+                if (parameterList.Length == 1)
+                {
+                    canClick = true;
+                    LoadDialogueList(parameterList[0]);
+                }
                 else throw new Exception("@playScript: Too many arguments. Expected 1, got " + parameterList.Length);
                 break;
             
@@ -358,7 +358,8 @@ public class DialogueManager : Singleton<DialogueManager>
         audioManager.interfaceAudio.volume = _interfaceVolume;
     }
 
-
+    
+    // TODO - canCTC
     private IEnumerator WaitCoroutine(float waitTime, bool canClickToContinue = false)
     {
         canClick = false;

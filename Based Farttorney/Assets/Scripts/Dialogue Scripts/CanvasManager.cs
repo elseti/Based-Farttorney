@@ -191,10 +191,13 @@ public class CanvasManager : MonoBehaviour
     public void PlayScriptAfterChoice(string script)
     {
         // print("played script " + script);
+        
+        DialogueManager.instance.canClick = true;
+        
         speakerBox.gameObject.SetActive(true);
         textBox.gameObject.SetActive(true);
+        
         DialogueManager.instance.LoadDialogueList(script);
-        DialogueManager.instance.canClick = true;
         HideChoices();
     }
     
