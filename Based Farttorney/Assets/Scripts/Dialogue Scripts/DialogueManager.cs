@@ -5,6 +5,7 @@ using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 using Action = Dialogue_Scripts.Action;
 
 public class DialogueManager : Singleton<DialogueManager>
@@ -53,6 +54,9 @@ public class DialogueManager : Singleton<DialogueManager>
     // vomit / fart buttons
     public GameObject vomitButton;
     public GameObject fartButton;
+    
+    // card for ending
+    public Image endingCard;
     
     
     private void Start()
@@ -422,6 +426,17 @@ public class DialogueManager : Singleton<DialogueManager>
     public void DisableFartButton()
     {
         fartButton.SetActive(false);
+    }
+
+    public void ShowEndingCard(string path)
+    {
+        endingCard.gameObject.SetActive(true);
+        endingCard.GetComponent<Image>().sprite = ResourceLoader.LoadBG(path);
+    }
+
+    public void HideEndingCard()
+    {
+        endingCard.gameObject.SetActive(false);
     }
     
     public void GameOver(string ending)
