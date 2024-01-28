@@ -35,6 +35,7 @@ namespace Gameplay_Scripts
         public void VomitButtonPressed()
         {
             this.gameObject.GetComponent<AudioSource>().PlayOneShot(vomitSfx);
+            DialogueManager.instance.ShowEndingCard("bg_MenuLose");
             if (_waitCoroutine == null)
             {
                 _waitCoroutine = StartCoroutine(WaitForAudioCompletion(vomitSfx));

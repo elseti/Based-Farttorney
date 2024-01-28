@@ -29,6 +29,7 @@ namespace Gameplay_Scripts
         {
             this.gameObject.GetComponent<AudioSource>().PlayOneShot(fartSfx);
             StartCoroutine(WaitForAudioCompletion(fartSfx));
+            DialogueManager.instance.ShowEndingCard("bg_MenuLose");
         }
 
         private void ShowFartButton()

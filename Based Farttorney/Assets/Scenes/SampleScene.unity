@@ -573,7 +573,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: VOMIT
+  m_text: FART
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e5596a4512063414b94579e2195a3aad, type: 2}
   m_sharedMaterial: {fileID: -6798744931816756648, guid: e5596a4512063414b94579e2195a3aad,
@@ -2306,7 +2306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.3529412}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3528,7 +3528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d475fcf2b690b48a28acbbabdb982ae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueTextPath: Scripts/Act_1/choice3_ans1
+  dialogueTextPath: Scripts/Act_1/scene_1
   dialogueConstants: {fileID: 11400000, guid: b407b08378cd043f1a3b6d9290f6bd45, type: 2}
   dialogueVariableText: {fileID: 4900000, guid: d59ff553eaf14bf09a1b54129d36e807,
     type: 3}
@@ -4688,7 +4688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveButton: {fileID: 1789362318}
   moveSpeed: 5000
-  vomitSfx: {fileID: 8300000, guid: 24e7fbc45c05741d49f3d53d69a038bd, type: 3}
+  vomitSfx: {fileID: 8300000, guid: ff660c8ff1fa54a08aa1a1395682bc56, type: 3}
 --- !u!1 &1816910486
 GameObject:
   m_ObjectHideFlags: 0

@@ -139,7 +139,21 @@ He’s not kicking me out, and I successfully convinced the other patrons that f
 null
 Ahhhh… yup. All in a day’s work for Ron Ansar. They don’t call me the Based Attorney for nothing.
 
+stopBgm
+
 hideCanvas
+
+switchCamera Black 2
+
+wait 2
+
+switchCamera Idle 2
+
+showCanvas
+
+showBg bg_EndingJock
+
+wait 3
 
 switchCamera Black 2
 

@@ -151,7 +151,7 @@ public class DialogueManager : Singleton<DialogueManager>
             {
                 if (canClick)
                 {
-                    audioManager.interfaceAudio.PlayOneShot(_dialogueContinueSfx);
+                    // audioManager.interfaceAudio.PlayOneShot(_dialogueContinueSfx);
                     _currDialogueIndex++;
 
                     // check if it is an Action
@@ -221,9 +221,17 @@ public class DialogueManager : Singleton<DialogueManager>
                 break;
             
             case "showBg":
+                canvasManager.ShowCanvas();
+                canvasManager.textBox.gameObject.SetActive(false);
+                canvasManager.speakerBox.gameObject.SetActive(false);
+                ShowEndingCard(parameterList[0]);
                 break;
             
             case "hideBg":
+                canvasManager.HideCanvas();
+                canvasManager.textBox.gameObject.SetActive(true);
+                canvasManager.speakerBox.gameObject.SetActive(true);
+                HideEndingCard();
                 break;
             
             case "playSfx":
@@ -430,22 +438,26 @@ public class DialogueManager : Singleton<DialogueManager>
 
     public void ShowEndingCard(string path)
     {
+        // endingCard.GetComponent<Image>().enabled = true;
         endingCard.gameObject.SetActive(true);
         endingCard.GetComponent<Image>().sprite = ResourceLoader.LoadBG(path);
     }
 
     public void HideEndingCard()
     {
+        // endingCard.GetComponent<Image>().enabled = false;
         endingCard.gameObject.SetActive(false);
     }
     
     public void GameOver(string ending)
     {
-        canvasManager.HideCanvas();
-        canvasManager.HideChoices();
-        audioManager.bgmAudio.Stop();
-        EndDialogue();
-        FadeOut(2f);
+        // canvasManager.HideCanvas();
+        // canvasManager.HideChoices();
+        // audioManager.bgmAudio.Stop();
+        // EndDialogue();
+        // FadeOut(2f, true);
+        cameraManager.SwitchCamera("Black", 0f);
+        
         switch (ending)
         {
             case "fart":
@@ -453,9 +465,12 @@ public class DialogueManager : Singleton<DialogueManager>
                 break;
             
             case "vomit":
+                // ShowEndingCard("bg_MenuLose");
                 Destroy(this.gameObject);
                 break;
         }
+        
+        SceneManager.LoadScene("MainMenu");
         
     }
 

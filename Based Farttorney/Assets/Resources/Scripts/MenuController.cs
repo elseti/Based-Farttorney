@@ -9,11 +9,14 @@ public class MenuController : MonoBehaviour
     public string _gameScene;
     public float _fadeDuration = 2.0f, _fadeDelay = 60.0f;
     public GameObject _msgLose, _msgTryAgain, _btnTryAgain;
+    public AudioClip fartSfx;
+    public AudioSource fartSource;
 
     // change scenes to start and end game
     public void PlayGame()
     {
-        SceneManager.LoadScene(_gameScene);
+        fartSource.PlayOneShot(fartSfx);
+        StartCoroutine(PlayGameCoroutine(2f));
     }
 
     public void QuitGame()
@@ -84,5 +87,17 @@ public class MenuController : MonoBehaviour
         elapsedTime = 0f;
 
         // make try again button active
+    }
+    
+    private IEnumerator QuitGameCoroutine(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        Application.Quit();
+    }
+    
+    private IEnumerator PlayGameCoroutine(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        SceneManager.LoadScene(_gameScene);
     }
 }

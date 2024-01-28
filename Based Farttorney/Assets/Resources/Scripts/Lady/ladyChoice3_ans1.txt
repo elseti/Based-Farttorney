@@ -1,6 +1,10 @@
 switchCamera OldMan 0
 
+stopBgm
+
 show oldman/angry oldman
+
+playBgm thinking
 
 [p]
 NO!!
@@ -84,6 +88,8 @@ switchCamera Barkeep
 
 show barkeep/stern barkeep
 
+stopBgm
+
 [b]
 …
 
@@ -111,6 +117,8 @@ show oldman/shocked oldman
 show jock/idle jock
 
 show barkeep/muscles barkeep
+
+playBgm jazz_bar
 
 [b]
 I’m not kicking you out, ma’am. You may stay.
@@ -246,7 +254,19 @@ Well, it’s not the outcome I was expecting, but he’s not kicking me out, and
 null
 Ahhhh… yup. All in a day’s work for Ron Ansar. They don’t call me the Based Attorney for nothing.
 
+stopBgm
+
 hideCanvas
+
+switchCamera Black 2
+
+wait 2
+
+switchCamera Idle 2
+
+showBg bg_EndingWoman
+
+wait 3
 
 switchCamera Black 2
 

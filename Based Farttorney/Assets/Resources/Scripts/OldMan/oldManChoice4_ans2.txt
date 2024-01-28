@@ -185,6 +185,16 @@ hideCanvas
 
 switchCamera Black 2
 
+wait 2
+
+switchCamera Idle 2
+
+showBg bg_EndingOldMan
+
+wait 3
+
+switchCamera Black 2
+
 wait 3.5
 
 loadScene MainMenu
