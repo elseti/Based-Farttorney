@@ -30,6 +30,8 @@ switchCamera Idle
 [r]
 Me, drunk? Pshaw!
 
+playBgm thinking
+
 [r]
 I was wondering where my Attorney’s badge went off to. And then it hit me.
 

@@ -1,3 +1,5 @@
+playBgm energetic
+
 [r]
 Aha! Who said anything about “tiny” or “golden”? How do you know what an Attorney’s badge looks like?
 
@@ -69,6 +71,8 @@ show oldman/angry oldman
 [p]
 Grr! You’re gonna pay for this! Mark my words…
 
+stopBgm
+
 hide oldman
 
 hideCanvas
@@ -87,6 +91,8 @@ switchCamera Idle 2
 wait 2
 
 showCanvas
+
+playBgm jazz_bar
 
 show jock/idle jock
 
@@ -172,6 +178,8 @@ He’s not kicking me out, and I successfully convinced the other patrons that f
 
 null
 Ahhhh… yup. All in a day’s work for Ron Ansar. They don’t call me the Based Attorney for nothing.
+
+stopBgm
 
 hideCanvas
 

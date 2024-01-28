@@ -69,6 +69,8 @@ show jock/crying jock
 [j]
 *sobs*
 
+stopBgm
+
 [r]
 You cretin.
 
@@ -87,6 +89,10 @@ hideCanvas
 switchCamera Lady 2
 
 wait 2
+
+playBgm jazz_bar
+
+show oldman/idle oldman
 
 showCanvas
 
@@ -137,6 +143,6 @@ hideCanvas
 
 switchCamera Black 2
 
-wait 3
+wait 3.5
 
 loadScene MainMenu

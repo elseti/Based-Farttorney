@@ -4,6 +4,8 @@ showCanvas
 
 show barkeep/inquisitive barkeep
 
+playBgm energetic
+
 [b]
 It wasn’t you?
 

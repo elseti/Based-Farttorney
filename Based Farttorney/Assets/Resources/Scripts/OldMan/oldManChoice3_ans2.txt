@@ -1,3 +1,5 @@
+playBgm energetic
+
 [r]
 Only people with terrible breath would chew gum this strong, and your breath smells even worse than the fart.
 
@@ -34,6 +36,8 @@ show oldman/angry oldman
 
 [r]
 And I’ll bet you stole my Attorney’s badge to show off to her too. Didn’t you?
+
+stopBgm
 
 [p]
 This is a ludicrous accusation! I don’t need some stupid badge. I got guns!

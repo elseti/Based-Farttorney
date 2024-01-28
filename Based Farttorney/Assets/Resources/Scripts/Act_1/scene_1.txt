@@ -14,6 +14,8 @@ switchCamera Jock
 
 wait 1.5
 
+playBgm jazz_bar
+
 showCanvas
 
 [j]
@@ -121,6 +123,8 @@ show barkeep/angry barkeep
 I hear you, ma’am.
 
 show barkeep/muscles barkeep
+
+stopBgm
 
 [b]
 Sir, if you can’t control your bowels, I’m gonna have to ask you to leave before you stink up the whole room.
