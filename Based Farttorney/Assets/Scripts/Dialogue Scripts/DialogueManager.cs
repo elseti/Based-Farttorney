@@ -5,6 +5,7 @@ using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 using Action = Dialogue_Scripts.Action;
 
 public class DialogueManager : Singleton<DialogueManager>
@@ -49,6 +50,13 @@ public class DialogueManager : Singleton<DialogueManager>
     // control variables
     [HideInInspector]
     public bool canClick = true;
+    
+    // vomit / fart buttons
+    public GameObject vomitButton;
+    public GameObject fartButton;
+    
+    // card for ending
+    public Image endingCard;
     
     
     private void Start()
@@ -143,7 +151,7 @@ public class DialogueManager : Singleton<DialogueManager>
             {
                 if (canClick)
                 {
-                    audioManager.interfaceAudio.PlayOneShot(_dialogueContinueSfx);
+                    // audioManager.interfaceAudio.PlayOneShot(_dialogueContinueSfx);
                     _currDialogueIndex++;
 
                     // check if it is an Action
@@ -213,9 +221,17 @@ public class DialogueManager : Singleton<DialogueManager>
                 break;
             
             case "showBg":
+                canvasManager.ShowCanvas();
+                canvasManager.textBox.gameObject.SetActive(false);
+                canvasManager.speakerBox.gameObject.SetActive(false);
+                ShowEndingCard(parameterList[0]);
                 break;
             
             case "hideBg":
+                canvasManager.HideCanvas();
+                canvasManager.textBox.gameObject.SetActive(true);
+                canvasManager.speakerBox.gameObject.SetActive(true);
+                HideEndingCard();
                 break;
             
             case "playSfx":
@@ -399,13 +415,49 @@ public class DialogueManager : Singleton<DialogueManager>
         cameraManager.SwitchCamera("Black", time);
         if(wait) StartCoroutine(WaitCoroutine(time));
     }
+
+    public void EnableVomitButton()
+    {
+        vomitButton.SetActive(true);
+    }
+
+    public void DisableVomitButton()
+    {
+        vomitButton.SetActive(false);
+    }
+
+    public void EnableFartButton()
+    {
+        fartButton.SetActive(true);
+    }
+
+    public void DisableFartButton()
+    {
+        fartButton.SetActive(false);
+    }
+
+    public void ShowEndingCard(string path)
+    {
+        // endingCard.GetComponent<Image>().enabled = true;
+        endingCard.gameObject.SetActive(true);
+        endingCard.GetComponent<Image>().sprite = ResourceLoader.LoadBG(path);
+    }
+
+    public void HideEndingCard()
+    {
+        // endingCard.GetComponent<Image>().enabled = false;
+        endingCard.gameObject.SetActive(false);
+    }
+    
     public void GameOver(string ending)
     {
-        canvasManager.HideCanvas();
-        canvasManager.HideChoices();
-        audioManager.bgmAudio.Stop();
-        EndDialogue();
-        FadeOut(2f);
+        // canvasManager.HideCanvas();
+        // canvasManager.HideChoices();
+        // audioManager.bgmAudio.Stop();
+        // EndDialogue();
+        // FadeOut(2f, true);
+        cameraManager.SwitchCamera("Black", 0f);
+        
         switch (ending)
         {
             case "fart":
@@ -413,9 +465,12 @@ public class DialogueManager : Singleton<DialogueManager>
                 break;
             
             case "vomit":
+                // ShowEndingCard("bg_MenuLose");
                 Destroy(this.gameObject);
                 break;
         }
+        
+        SceneManager.LoadScene("MainMenu");
         
     }
 

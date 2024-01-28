@@ -16,7 +16,7 @@ switchCamera Jock 0.4
 show jock/cocky jock
 
 [j]
-Can’t wait to hear what this is gonna be…
+Can’t wait to hear what this is gonna be...
 
 switchCamera Idle 2
 
@@ -37,6 +37,6 @@ Oho! I do like the sound of that. Good on you to respect your elders, kid.
 That’s cuz he was the only weirdo who inhaled deeply while the rest of us held our breaths.
 
 [r]
-And what was it he smelled? That’s right. It was…
+And what was it he smelled? That’s right. It was...
 
-choice …I can’t remember. Time to jog my memory! *fart*:Scripts/Jock/jockChoice2_ans2 | Apple pie!: Scripts/Jock/jockChoice2_ans2 | Roast chicken!:Scripts/Jock/jockChoice2_ans2 | Rotten eggs!:Scripts/Jock/jockChoice2_ans2
+choice ...I can’t remember. Time to jog my memory! *fart*:Scripts/Jock/jockChoice2_ans2 | Apple pie!: Scripts/Jock/jockChoice2_ans2 | Roast chicken!:Scripts/Jock/jockChoice2_ans2 | Rotten eggs!:Scripts/Jock/jockChoice2_ans2

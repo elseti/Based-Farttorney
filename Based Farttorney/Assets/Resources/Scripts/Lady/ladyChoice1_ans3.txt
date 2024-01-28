@@ -3,7 +3,7 @@ switchCamera Barkeep
 show barkeep/inquisitive barkeep
 
 [b]
-…
+...
 
 switchCamera Lady
 

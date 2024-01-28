@@ -19,14 +19,14 @@ playBgm jazz_bar
 showCanvas
 
 [j]
-…
+...
 
 show lady/judge lady
 
 switchCamera Lady
 
 [w]
-…
+...
 
 switchCamera OldMan
 
@@ -38,12 +38,12 @@ show oldman/drool_left oldman
 switchCamera Barkeep
 
 [b]
-…
+...
 
 switchCamera Idle
 
 [r]
-…
+...
 
 [r]
 Why *burp* is everyone staring at me?
@@ -84,7 +84,7 @@ switchCamera OldMan
 show oldman/perv oldman
 
 [p]
-It was a loud one too, hehe… *sniffs* and it sounded real wet. Smells like someone had apple pie for dessert?
+It was a loud one too, hehe... *sniffs* and it sounded real wet. Smells like someone had apple pie for dessert?
 
 [r]
 Wasn’t me! 
@@ -113,7 +113,7 @@ Yeah! This is supposed to be a classy establishment for cheap beer and even chea
 switchCamera Lady
 
 [w]
-…
+...
 
 switchCamera Barkeep
 
@@ -138,7 +138,7 @@ show barkeep/angry barkeep
 Why not?
 
 [r]
-Uhh…
+Uhh...
 
 null
 Okay, Ron. You’ve drank an insane amount of alcohol but you can’t get kicked out now. 

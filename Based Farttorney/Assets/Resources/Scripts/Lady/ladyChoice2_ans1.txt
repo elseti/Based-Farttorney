@@ -79,16 +79,16 @@ switchCamera Barkeep
 show barkeep/idle barkeep
 
 [r]
-Now look at the bartender’s mustache. Majestic, well-trimmed, perfectly groomed to the point it almost takes a life of its own…
+Now look at the bartender’s mustache. Majestic, well-trimmed, perfectly groomed to the point it almost takes a life of its own...
 
 show barkeep/inquisitive barkeep
 
 [b]
-…
+...
 
 switchCamera Idle
 
 [r]
-Isn’t it obvious? This woman and the bartender… their relationship is obvious.
+Isn’t it obvious? This woman and the bartender... their relationship is obvious.
 
 choice They’re lovers!:Scripts/Lady/ladyChoice3_ans1 | They’re enemies!:Scripts/Lady/ladyChoice3_ans1 | They’re farters! *fart*:Scripts/Lady/ladyChoice3_ans1

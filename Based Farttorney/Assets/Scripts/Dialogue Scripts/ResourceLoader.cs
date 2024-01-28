@@ -14,6 +14,19 @@ public static class ResourceLoader
 
         return sprite;
     }
+    
+    public static Sprite LoadBG(string path)
+    {
+        // TODO- make starting customisable?
+        Sprite sprite = Resources.Load<Sprite>("BG/" + path);
+        if (sprite == null)
+        {
+            throw new Exception("@ResourceLoader.cs: Sprite in path Image/" + path + " not found!");
+        }
+
+        return sprite;
+    }
+
 
     public static AudioClip LoadSfx(string path)
     {
