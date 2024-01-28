@@ -91,7 +91,8 @@ public class DialogueManager : Singleton<DialogueManager>
 
     public void LoadDialogueList(string path)
     {
-        print(_currDialogueIndex);
+        print("_currDialogueIndex" + _currDialogueIndex);
+        print("canclick" + canClick);
         EndDialogue();
         List<Dialogue> unAssignedDialogueList = DialogueRecords.LoadDialogueList(path);
         _currDialogueList = variableManager.AssignVariablesToDialogues(unAssignedDialogueList);
@@ -101,7 +102,8 @@ public class DialogueManager : Singleton<DialogueManager>
 
     private void PlayDialogue()
     {
-
+        print("typing corooutine: " + canvasManager.typingCoroutine);
+        print("playdialogue index" + _currDialogueIndex);
         if (canvasManager.typingCoroutine != null)
         {
             StopCoroutine(canvasManager.typingCoroutine);
@@ -110,6 +112,7 @@ public class DialogueManager : Singleton<DialogueManager>
         canvasManager.textBoxText.text = "";
         string speakerName = _currDialogueList[_currDialogueIndex].GetName();
         string speakerText = _currDialogueList[_currDialogueIndex].GetText();
+        print(speakerName+ " "+ speakerText);
         if (speakerName == "")
         {
             canvasManager.SetAlphaImage(canvasManager.speakerBox, 0f);
@@ -354,14 +357,15 @@ public class DialogueManager : Singleton<DialogueManager>
         audioManager.voiceAudio.volume = _voiceVolume;
         audioManager.interfaceAudio.volume = _interfaceVolume;
     }
-    
 
-    private IEnumerator WaitCoroutine(float waitTime)
+
+    private IEnumerator WaitCoroutine(float waitTime, bool canClickToContinue = false)
     {
         canClick = false;
         audioManager.interfaceAudio.PlayOneShot(_silenceSfx);
         yield return new WaitForSeconds(waitTime);
         canClick = true;
+        NextDialogue();
     }
 
     private void LoadScene(string sceneName)

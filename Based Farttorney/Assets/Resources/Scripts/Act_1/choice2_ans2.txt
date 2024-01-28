@@ -1,0 +1,59 @@
+hideCanvas
+
+showCanvas
+
+[w]
+And how are you gonna do that?
+
+[r]
+I’m glad you asked.
+
+null
+I pull my Attorney’s badge out and pin it to my chest.
+
+[r]
+I’m a mother-****in’ ATTORNEY. 
+
+[r]
+I passed the bar. I spent thousands and thousands of dollars in tuition. I slaved away for years, studying, sacrificing friendships and lovers. 
+
+[r]
+All so I could become the accomplished lawyer that I am today. And with my hard-earned law degree, I’m going to prove that the person behind that massive, wet fart wasn’t me!
+
+[j]
+Cool speech bro… but you also just stuck a wad of chewing gum to your chest.
+
+[r]
+Oh. Wait, then where’s my Attorney’s badge?
+
+[w]
+You’re way too drunk for this.
+
+[r]
+no u
+
+[b]
+*sigh* I don’t make enough money for this ****.
+
+[b]
+Okay, look. In the spirit of fairness, if you can prove that someone else was responsible for… you know… then you may stay, and the actual culprit will be escorted off the premises.
+
+[r]
+Hell yes!
+
+[r]
+Now, why is everyone so convinced that I’m the one who did it?
+
+[j]
+That **** was loud, bro. It came from the bar, right where you’re sitting. We all heard it.
+
+[p]
+And smelled it!
+
+[w]
+And you’re clearly drunk enough to have done it and not even realized.
+
+[r]
+That doesn’t prove anything! After all…
+
+choice All three of you were here too!:Scripts/Act_1/choice3_ans1 | How can you hear anything over this bussin’ music?:Scripts/Act_1/choice3_ans1 | I have a medical condition that prevents me from farting *fart*:Scripts/Act_1/choice_3_ans1
