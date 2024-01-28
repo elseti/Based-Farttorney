@@ -20,13 +20,23 @@ playSfx fart02
 [r]
 Sorry! *fart* I can’t help it. *fart*
 
+switchCamera OldMan
+
 show oldman/perv oldman
 
 [p]
 *inhales deeply*
 
+switchCamera Jock
+
+show jock/accusing jock
+
 [j]
 Dude. What the **** is wrong with you?
+
+switchCamera Lady
+
+show lady/stressed lady
 
 [w]
 I’m surrounded by lunatics.
@@ -36,10 +46,21 @@ playSfx fart02
 [r]
 No, wait. *fart* Please, I can explain!
 
+switchCamera Barkeep 0.15
+
 show barkeep/muscles barkeep
 
 [b]
 GEEEEET OUT!!
+
+playSfx thunder
+
+switchCamera Black 0
+
+wait 1
+
+null
+...
 
 null
 That coulda gone better.

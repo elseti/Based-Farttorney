@@ -7,6 +7,10 @@ playSfx man-vomiting-01
 
 show lady/shocked lady
 
+show oldman/shocked oldman
+
+show jock/accusing jock
+
 [w]
 OH MY GOD.
 
@@ -22,8 +26,17 @@ Even for me, this is getting too gross.
 [r]
 W-Wait! I'm sorry, I can explain-
 
+show barkeep/angry barkeep
+
 [b]
 GEEEEET OUT!!
+
+playSfx thunder
+
+switchCamera Black 0
+
+null
+...
 
 null
 That coulda gone better.
