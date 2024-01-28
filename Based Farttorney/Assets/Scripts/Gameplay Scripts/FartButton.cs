@@ -21,6 +21,7 @@ namespace Gameplay_Scripts
         {
             if (Random.Range(0, 1) < 0.25 && _appearCoroutine == null)
             {
+                print("starting coroutine");
                 _appearCoroutine = StartCoroutine(AppearCoroutine(Random.Range(minAppearDuration, maxAppearDuration), Random.Range(minHideDuration, maxHideDuration)));
             }
         }
@@ -49,11 +50,16 @@ namespace Gameplay_Scripts
         }
         
         private IEnumerator AppearCoroutine(float appearTime, float hideTime){
+            print("start of coroutine");
             ShowFartButton();
             yield return new WaitForSecondsRealtime(appearTime);
             
+            print("middle of coroutine");
+            
             HideFartButton();
             yield return new WaitForSecondsRealtime(hideTime);
+            
+            print("end of coroutine");
             
             _appearCoroutine = null;
         }

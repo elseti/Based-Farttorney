@@ -2,6 +2,8 @@ switchCamera Idle
 
 playSfx fart02
 
+wait 1
+
 [w]
 You LITERALLY just farted!
 
@@ -18,6 +20,8 @@ playSfx fart02
 [r]
 Sorry! *fart* I can’t help it. *fart*
 
+show oldman/perv oldman
+
 [p]
 *inhales deeply*
 
@@ -31,6 +35,8 @@ playSfx fart02
 
 [r]
 No, wait. *fart* Please, I can explain!
+
+show barkeep/muscles barkeep
 
 [b]
 GEEEEET OUT!!
