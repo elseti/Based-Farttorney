@@ -173,7 +173,7 @@ public class CanvasManager : MonoBehaviour
     {
         DialogueManager.instance.EnableVomitButton();
         ShowChoices();
-        float buttonGap = 120f;
+        float buttonGap = 180f;
         speakerBox.gameObject.SetActive(false);
         textBox.gameObject.SetActive(false);
         DialogueManager.instance.canClick = false;

@@ -53,11 +53,11 @@ I’d like to see you try, man. Go on! Where’s your precious evidence?
 I shouldn’t be the one to tell you this, since you’re the lawyer, but don’t you need evidence to build a case against someone? Right now, you have nothing - except that wadded-up gum stuck to your chest.
 
 null
-Aha! But little does he know I can literally pull evidence… OUT OF MY ***.
+Aha! But little does he know I can literally pull evidence... OUT OF MY ***.
 
 //sound of table slamming AA style
 
 [r]
-Observe! This crucial piece of evidence that points to you is…
+Observe! This crucial piece of evidence that points to you is...
 
 choice The smell of the fart!:Scripts/Jock/jockChoice1_ans1 | This piece of gum!:Scripts/Jock/jockChoice1_ans1 | The bartender’s mustache!:Scripts/Jock/jockChoice1_ans1

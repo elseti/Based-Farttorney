@@ -14,16 +14,16 @@ switchCamera Lady 1
 show lady/judge lady
 
 [w]
-…
+...
 
 [w]
-Putting aside that obvious overreaction…
+Putting aside that obvious overreaction...
 
 [w]
 Is that seriously what you think? Me and this barkeep are, what, a couple?
 
 [w]
-I mean, don’t get me wrong, sir. You’re a very handsome man and that is a very handsome mustache…
+I mean, don’t get me wrong, sir. You’re a very handsome man and that is a very handsome mustache...
 
 switchCamera Barkeep 0.3
 
@@ -46,14 +46,14 @@ Sure, it may seem like circumstantial evidence. But look at the facts.
 She’s here alone, sits right up at the bar to be harassed by a creepy old man, and barely drinks anything. Why would she do that to “relax”, as she claims?
 
 [r]
-Is it possible she has some other motive? Such as… to spend some time watching her man at work?
+Is it possible she has some other motive? Such as... to spend some time watching her man at work?
 
 switchCamera OldMan 0.1
 
 show oldman/shocked oldman
 
 [p]
-Uh… I’d like to revisit that “harassed by a creepy old man” part?
+Uh... I’d like to revisit that “harassed by a creepy old man” part?
 
 [r]
 Denied.
@@ -91,17 +91,17 @@ show barkeep/stern barkeep
 stopBgm
 
 [b]
-…
+...
 
 show barkeep/sad barkeep
 
 [b]
-…
+...
 
 show barkeep/angry barkeep
 
 [b]
-… No.
+... No.
 
 switchCamera Lady 0
 
@@ -185,7 +185,7 @@ show barkeep/muscles barkeep
 Another drink, ma’am? On the house. As an apology for spoiling your night.
 
 [w]
-Oh. Well… sure. I’d like that.
+Oh. Well... sure. I’d like that.
 
 show jock/accusing jock
 
@@ -198,14 +198,14 @@ show lady/stressed lady
 Oh, be quiet.
 
 [p]
-Ngh… how could I have let this happen?
+Ngh... how could I have let this happen?
 
 switchCamera Barkeep
 
 show barkeep/idle barkeep
 
 [r]
-So, uh… barkeep. 
+So, uh... barkeep. 
 
 show barkeep/inquisitive barkeep
 
@@ -213,12 +213,12 @@ show barkeep/inquisitive barkeep
 Hmm?
 
 [r]
-They’re not listening in anymore, so uh… you wanna tell me why you took the fall for a fart that wasn’t yours?
+They’re not listening in anymore, so uh... you wanna tell me why you took the fall for a fart that wasn’t yours?
 
 show barkeep/stern barkeep
 
 [b]
-…
+...
 
 [r]
 You really do like that woman, don’t you?
@@ -226,7 +226,7 @@ You really do like that woman, don’t you?
 show barkeep/happy barkeep
 
 [b]
-… Perhaps.
+... Perhaps.
 
 [r]
 You sly dog. Well, if it’s any consolation, I think she likes you too!
@@ -252,7 +252,7 @@ null
 Well, it’s not the outcome I was expecting, but he’s not kicking me out, and I successfully convinced the other patrons that fart didn’t come from me.
 
 null
-Ahhhh… yup. All in a day’s work for Ron Ansar. They don’t call me the Based Attorney for nothing.
+Ahhhh... yup. All in a day’s work for Ron Ansar. They don’t call me the Based Attorney for nothing.
 
 stopBgm
 

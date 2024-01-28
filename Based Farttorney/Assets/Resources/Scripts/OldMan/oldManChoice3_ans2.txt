@@ -57,7 +57,7 @@ show oldman/accusing oldman
 I’m talkin’ bout these two beefy boys, son. With muscles like these, who needs good breath or a tiny golden pin to impress women? 
 
 [r]
-Hang on… what you just said. That’s it!
+Hang on... what you just said. That’s it!
 
 show oldman/idle oldman
 
@@ -65,6 +65,6 @@ show oldman/idle oldman
 That’s what?
 
 [r]
-Did you all hear what he said? He said…
+Did you all hear what he said? He said...
 
 choice Two beefy boys:Scripts/OldMan/oldManChoice4_ans2 | Tiny golden pin:Scripts/OldMan/oldManChoice4_ans2 | I got guns:Scripts/OldMan/oldManChoice4_ans2

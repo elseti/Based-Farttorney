@@ -24,7 +24,7 @@ switchCamera OldMan
 show oldman/drool_left oldman
 
 [p]
-I bet it was the lovely madame. It would certainly explain why the smell was more… *ahem* fragrant than normal.
+I bet it was the lovely madame. It would certainly explain why the smell was more... *ahem* fragrant than normal.
 
 switchCamera Lady
 

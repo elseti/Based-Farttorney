@@ -50,7 +50,7 @@ namespace Gameplay_Scripts
             if (Random.Range(0, 1) < 0.000000000000001)
             {
                 _randomPosition = new Vector2(Random.Range(0, Screen.width), Random.Range(0, Screen.height));
-                print(_randomPosition);
+                // print(_randomPosition);
             }
             
             // if (Vector2.Distance(rectTransform.position, _randomPosition) < 1f)

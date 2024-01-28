@@ -24,7 +24,7 @@ switchCamera OldMan
 show oldman/drool_right oldman
 
 [p]
-I don’t know… seems pretty decisive to me.
+I don’t know... seems pretty decisive to me.
 
 switchCamera Jock 0.1
 
@@ -59,7 +59,7 @@ show jock/accusing jock
 I didn’t do it!!
 
 [r]
-Just think. What would your parents say? Knowing that they raised a liar… and a farter?
+Just think. What would your parents say? Knowing that they raised a liar... and a farter?
 
 [r]
 Decades of hard work and late nights, earning enough to put you through school, only for you to waste it all on a life of debauchery and flatulence. 
@@ -97,17 +97,17 @@ show oldman/idle oldman
 showCanvas
 
 [w]
-…
+...
 
 switchCamera OldMan 2
 
 [p]
-…
+...
 
 switchCamera Idle 2
 
 [r]
-…
+...
 
 [r]
 Welp. That went well.
@@ -137,7 +137,7 @@ null
 He’s not kicking me out, and I successfully convinced the other patrons that fart didn’t come from me.
 
 null
-Ahhhh… yup. All in a day’s work for Ron Ansar. They don’t call me the Based Attorney for nothing.
+Ahhhh... yup. All in a day’s work for Ron Ansar. They don’t call me the Based Attorney for nothing.
 
 stopBgm
 

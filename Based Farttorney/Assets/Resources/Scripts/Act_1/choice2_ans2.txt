@@ -29,7 +29,7 @@ switchCamera Jock
 show jock/cocky jock
 
 [j]
-Cool speech bro… but you also just stuck a wad of chewing gum to your chest.
+Cool speech bro... but you also just stuck a wad of chewing gum to your chest.
 
 [r]
 Oh. Wait, then where’s my Attorney’s badge?
@@ -52,7 +52,7 @@ show barkeep/sad barkeep
 show barkeep/stern barkeep
 
 [b]
-Okay, look. In the spirit of fairness, if you can prove that someone else was responsible for… you know… then you may stay, and the actual culprit will be escorted off the premises.
+Okay, look. In the spirit of fairness, if you can prove that someone else was responsible for... you know... then you may stay, and the actual culprit will be escorted off the premises.
 
 [r]
 Hell yes!
@@ -84,6 +84,6 @@ And you’re clearly drunk enough to have done it and not even realized.
 switchCamera Idle
 
 [r]
-That doesn’t prove anything! After all…
+That doesn’t prove anything! After all...
 
 choice All three of you were here too!:Scripts/Act_1/choice3_ans1 | How can you hear anything over this bussin’ music?:Scripts/Act_1/choice3_ans1 | I have a medical condition that prevents me from farting *fart*:Scripts/Act_1/choice_3_ans1

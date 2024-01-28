@@ -69,7 +69,7 @@ switchCamera OldMan
 show oldman/angry oldman
 
 [p]
-Grr! You’re gonna pay for this! Mark my words…
+Grr! You’re gonna pay for this! Mark my words...
 
 stopBgm
 
@@ -99,12 +99,12 @@ show jock/idle jock
 show lady/stressed lady
 
 [w]
-Finally…
+Finally...
 
 show jock/satisfied jock
 
 [j]
-So, uh… that was interesting.
+So, uh... that was interesting.
 
 [r]
 Welp. All’s well that ends well, eh?
@@ -112,7 +112,7 @@ Welp. All’s well that ends well, eh?
 show barkeep/stern barkeep
 
 [b]
-…
+...
 
 switchCamera Barkeep 1
 
@@ -144,7 +144,7 @@ show barkeep/angry barkeep
 Are you accusing me of thievery in my own bar?
 
 [r]
-… I take it back.
+... I take it back.
 
 show barkeep/idle barkeep
 
@@ -166,7 +166,7 @@ I know. But it was much more fun watching to see what you’d do.
 Can’t argue with that.
 
 [r]
-Anyway. … Another beer?
+Anyway. ... Another beer?
 
 show barkeep/muscles barkeep
 
@@ -177,7 +177,7 @@ null
 He’s not kicking me out, and I successfully convinced the other patrons that fart didn’t come from me.
 
 null
-Ahhhh… yup. All in a day’s work for Ron Ansar. They don’t call me the Based Attorney for nothing.
+Ahhhh... yup. All in a day’s work for Ron Ansar. They don’t call me the Based Attorney for nothing.
 
 stopBgm
 

@@ -19,7 +19,7 @@ namespace Gameplay_Scripts
         
         private void Update()
         {
-            if (Random.Range(0, 1) < 0.2 && _appearCoroutine == null)
+            if (Random.Range(0, 1) < 0.25 && _appearCoroutine == null)
             {
                 _appearCoroutine = StartCoroutine(AppearCoroutine(Random.Range(minAppearDuration, maxAppearDuration), Random.Range(minHideDuration, maxHideDuration)));
             }

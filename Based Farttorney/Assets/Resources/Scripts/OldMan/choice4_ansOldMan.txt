@@ -107,10 +107,10 @@ show oldman/angry oldman
 What, you have something that proves it was me? I seriously doubt that.
 
 null
-Aha! But little does he know I can literally pull evidence… OUT OF MY ***.
+Aha! But little does he know I can literally pull evidence... OUT OF MY ***.
 
 [r]
-Observe! This crucial piece of evidence that points to you is…
+Observe! This crucial piece of evidence that points to you is...
 
 stopBgm
 

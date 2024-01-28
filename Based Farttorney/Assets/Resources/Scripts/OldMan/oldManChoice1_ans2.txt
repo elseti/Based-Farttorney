@@ -6,7 +6,7 @@ switchCamera Jock
 show jock/idle jock
 
 [j]
-Uh… that’s still not your Attorney’s badge, bro.
+Uh... that’s still not your Attorney’s badge, bro.
 
 [r]
 Exactly.

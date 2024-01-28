@@ -12,7 +12,7 @@ Why would I keep chewed-up gum in my pocket where my prized badge is? I would’
 show barkeep/idle barkeep
 
 [b]
-…
+...
 
 [r]
 Er, anyway.
@@ -31,6 +31,6 @@ show oldman/angry oldman
 But also, ridiculous. What makes you think that gum is even mine?
 
 [r]
-Because…
+Because...
 
 choice I tasted your saliva on it:Scripts/OldMan/oldManChoice3_ans2 |  You have bad breath:Scripts/OldMan/oldManChoice3_ans2 | I said so:Scripts/OldMan/oldManChoice3_ans2
