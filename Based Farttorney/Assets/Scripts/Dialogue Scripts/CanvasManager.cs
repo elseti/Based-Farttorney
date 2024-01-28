@@ -31,6 +31,7 @@ public class CanvasManager : MonoBehaviour
     // Choice boxes
     public Transform choiceLocation;
     public GameObject choiceBox;
+    public GameObject[] instantiatedChoices;
     
     // Coroutine for typing dialogue text
     public Coroutine typingCoroutine;
@@ -42,6 +43,7 @@ public class CanvasManager : MonoBehaviour
     {
         try
         {
+            instantiatedChoices = new GameObject[10];
             textBoxText = textBox.GetComponentInChildren<TextMeshProUGUI>();
             speakerBoxText = speakerBox.GetComponentInChildren<TextMeshProUGUI>();
         }
@@ -177,6 +179,7 @@ public class CanvasManager : MonoBehaviour
         for (int x = 0; x < choiceTextList.Length; x++)
         {
             GameObject choice = Instantiate(choiceBox, choiceLocation);
+            instantiatedChoices[x] = choice;
             choice.SetActive(true);
             choice.transform.localPosition = new Vector3(0, x * -buttonGap, 0);
             choice.GetComponentInChildren<TextMeshProUGUI>().text = choiceTextList[x];
@@ -189,6 +192,13 @@ public class CanvasManager : MonoBehaviour
     public void PlayScriptAfterChoice(string script)
     {
         // print("played script " + script);
+        for (int x = 0; x < instantiatedChoices.Length; x++)
+        {
+            if (instantiatedChoices[x] != null)
+            {
+                Destroy(instantiatedChoices[x].gameObject);
+            }
+        }
         
         DialogueManager.instance.canClick = true;
         

@@ -1,0 +1,36 @@
+null
+I tap the sticky wad that I stuck proudly to my chest only a few minutes ago.
+
+switchCamera Jock
+
+show jock/idle jock
+
+[j]
+Uh… that’s still not your Attorney’s badge, bro.
+
+[r]
+Exactly.
+
+switchCamera Lady
+
+show lady/stressed lady
+
+[w]
+He’s lost it. All that fart-smelling must’ve gotten to him, addled his mind.
+
+switchCamera Barkeep
+
+show barkeep/sad barkeep
+
+[b]
+Or he’s just drunk.
+
+switchCamera Idle
+
+[r]
+Me, drunk? Pshaw!
+
+[r]
+I was wondering where my Attorney’s badge went off to. And then it hit me.
+
+choice Another fart! *fart*:Scripts/OldMan/oldManChoice2_ans2 | My badge was stolen!:Scripts/OldMan/oldManChoice2_ans2 | My badge never existed!:Scripts/OldMan/oldManChoice2_ans2

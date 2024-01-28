@@ -1,0 +1,115 @@
+switchCamera Lady
+
+show lady/cocky lady
+
+[w]
+Okay, this I can actually get behind.
+
+switchCamera OldMan
+
+show oldman/shocked oldman
+
+[p]
+What? Babe, don’t be silly, of course it wasn’t me.
+
+switchCamera Lady
+
+show lady/judge lady
+
+[w]
+Uh, first of all, don’t call me that.
+
+[w]
+And secondly, I don’t care which one of you did it, I just want at least one of you creeps gone so I can enjoy the rest of my night in a fart-less, pervert-less bar.
+
+switchCamera OldMan
+
+show oldman/perv oldman
+
+[p]
+Then you shouldn’t want me gone, baby. I’m no pervert. I’m a cultured gentleman.
+
+switchCamera Lady
+
+show lady/stressed lady
+
+[w]
+You were literally just talking about being able to tell the difference between men and women’s farts based on the smell.
+
+switchCamera OldMan
+
+[p]
+Exactly! I’m very cultured.
+
+show oldman/drool_left oldman
+
+[p]
+Besides, you really think I would have sniffed so deeply if it were my own fart? I only do that with women, although I do make an exception if the fart is particularly aromatic.
+
+switchCamera Lady
+
+show lady/disgusted lady
+
+[w]
+Ew. Everytime I think you can’t sink any lower, you find a way.
+
+[r]
+Haven’t you heard the saying, “he who smelt it dealt it”?
+
+switchCamera OldMan 0.2
+
+show oldman/shocked oldman
+
+[p]
+C’mon! I’m not that narcissistic to be getting high off sniffing my own farts!
+
+switchCamera Barkeep
+
+show barkeep/angry barkeep
+
+[b]
+You were getting high off the previous fart?
+
+switchCamera Jock
+
+show jock/idle jock
+
+[j]
+I suppose it could technically have been him who farted, since the sound did come from that side of the room.
+
+show jock/angry jock
+
+[j]
+But I still think you’re just tryna cover your own ass.
+
+switchCamera OldMan
+
+show oldman/drool_right oldman
+
+[p]
+See? At least the young man has my back.
+
+switchCamera Jock
+
+show jock/idle jock
+
+[j]
+Not if the lawyer over here comes up with evidence that proves otherwise, that is.
+
+[r]
+Aha! You said the magic word.
+
+switchCamera OldMan
+
+show oldman/angry oldman
+
+[p]
+What, you have something that proves it was me? I seriously doubt that.
+
+null
+Aha! But little does he know I can literally pull evidence… OUT OF MY ***.
+
+[r]
+Observe! This crucial piece of evidence that points to you is…
+
+choice The smell of the fart!:Scripts/Jock/jockChoice1_ans1 | This piece of gum!:Scripts/OldMan/oldManChoice1_ans2 | The bartender’s mustache!:Scripts/Jock/jockChoice1_ans1

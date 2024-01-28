@@ -1,0 +1,36 @@
+[r]
+And if someone stole it, the only clue as to who did it is this piece of gum left behind!
+
+show jock/accusing jock
+
+[j]
+You’re telling me that isn’t yours?
+
+[r]
+Why would I keep chewed-up gum in my pocket where my prized badge is? I would’ve left it on the underside of this countertop a long time ago if it was.
+
+show barkeep/idle barkeep
+
+[b]
+…
+
+[r]
+Er, anyway.
+
+[r]
+Someone stole my badge and decided to use my pocket as his own personal trashbin at the same time. And there’s only one person it could be: the sleazy old man!
+
+show oldman/accusing oldman
+
+[p]
+Again, I’m not sleazy. I’m cultured.
+
+show oldman/angry oldman
+
+[p]
+But also, ridiculous. What makes you think that gum is even mine?
+
+[r]
+Because…
+
+choice I tasted your saliva on it:Scripts/OldMan/oldManChoice3_ans2 |  You have bad breath:Scripts/OldMan/oldManChoice3_ans2 | I said so:Scripts/OldMan/oldManChoice3_ans2

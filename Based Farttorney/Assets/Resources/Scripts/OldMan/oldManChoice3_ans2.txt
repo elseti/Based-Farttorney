@@ -1,0 +1,66 @@
+[r]
+Only people with terrible breath would chew gum this strong, and your breath smells even worse than the fart.
+
+[r]
+You’ve been hitting on that poor woman all evening long. No doubt a sleazy-
+
+switchCamera OldMan 0
+
+show oldman/angry oldman
+
+[p]
+Cultured!
+
+[r]
+-cultured old man like yourself would do everything in your power to try and make yourself appealing to pick up women.
+
+show oldman/perv oldman
+
+[p]
+Incorrect. I am already naturally attractive, therefore I do not need to do anything more to attract women.
+
+switchCamera Lady
+
+show lady/disgusted lady
+
+[w]
+Now that’s the funniest thing I’ve heard all night.
+
+show lady/idle lady
+
+switchCamera OldMan
+
+show oldman/angry oldman
+
+[r]
+And I’ll bet you stole my Attorney’s badge to show off to her too. Didn’t you?
+
+[p]
+This is a ludicrous accusation! I don’t need some stupid badge. I got guns!
+
+switchCamera Jock 0.1
+
+show jock/crying jock
+
+[j]
+He does? Oh God! Everyone hit the deck!!
+
+switchCamera OldMan 0.1
+
+show oldman/accusing oldman
+
+[p]
+I’m talkin’ bout these two beefy boys, son. With muscles like these, who needs good breath or a tiny golden pin to impress women? 
+
+[r]
+Hang on… what you just said. That’s it!
+
+show oldman/idle oldman
+
+[p]
+That’s what?
+
+[r]
+Did you all hear what he said? He said…
+
+choice Two beefy boys:Scripts/OldMan/oldManChoice4_ans2 | Tiny golden pin:Scripts/OldMan/oldManChoice4_ans2 | I got guns:Scripts/OldMan/oldManChoice4_ans2

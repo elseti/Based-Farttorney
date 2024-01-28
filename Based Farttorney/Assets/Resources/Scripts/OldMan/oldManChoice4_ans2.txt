@@ -1,0 +1,182 @@
+[r]
+Aha! Who said anything about “tiny” or “golden”? How do you know what an Attorney’s badge looks like?
+
+show oldman/angry oldman
+
+[p]
+Huh?
+
+[r]
+Busted.
+
+[p]
+Okay, now you’re pissing me off. I didn’t take your stupid badge!
+
+show oldman/accusing oldman
+
+[p]
+B- Besides, I thought we were grilling him for the fart. This isn’t what I should be on trial for!
+
+[r]
+Don’t you know all criminals are the same? Pickpocketing is on the same level as farting silently and blaming an innocent person for it, you know.
+
+null
+Man, I hope that’s not true. Otherwise, I’d be facing some serious charges right about now.
+
+[r]
+I’ll bet you even farted and tried to pin the blame on me to get me kicked out. Then, I’d never find out you stole my stuff.
+
+switchCamera Jock 0.1
+
+show jock/accusing jock
+
+[j]
+Diabolical!
+
+switchCamera OldMan 0.1
+
+[p]
+It’s a lie!
+
+switchCamera Lady 0.1
+
+[w]
+Eh. I can believe it.
+
+switchCamera OldMan 0.1
+
+show oldman/shocked oldman
+
+[p]
+What?! B-Babe!
+
+switchCamera Lady 0.1
+
+[w]
+Do you really think calling me that again is gonna help your case?
+
+switchCamera Barkeep
+
+show barkeep/angry barkeep
+
+[b]
+Alright, farting was bad enough, but thievery? In my bar? That’s a big no-no. I’m gonna have to ask you to leave.
+
+switchCamera OldMan
+
+show oldman/angry oldman
+
+[p]
+Grr! You’re gonna pay for this! Mark my words…
+
+hide oldman
+
+hideCanvas
+
+switchCamera Black 2
+
+wait 2
+
+null
+I watch as the bartender escorts the irate man out of the bar.
+
+hideCanvas
+
+switchCamera Idle 2
+
+wait 2
+
+showCanvas
+
+show jock/idle jock
+
+show lady/stressed lady
+
+[w]
+Finally…
+
+show jock/satisfied jock
+
+[j]
+So, uh… that was interesting.
+
+[r]
+Welp. All’s well that ends well, eh?
+
+show barkeep/stern barkeep
+
+[b]
+…
+
+switchCamera Barkeep 1
+
+[r]
+What?
+
+show barkeep/idle barkeep
+
+[b]
+Aren’t you forgetting something?
+
+[b]
+You never got your badge back.
+
+[r]
+Oh yeah! I forgor.
+
+show barkeep/happy barkeep
+
+null
+The bartender slides a small golden pin across the counter to me.
+
+[r]
+Wait. You took it?
+
+show barkeep/angry barkeep
+
+[b]
+Are you accusing me of thievery in my own bar?
+
+[r]
+… I take it back.
+
+show barkeep/idle barkeep
+
+[b]
+You dropped it on the floor about six drinks in. 
+
+[b]
+I could’ve corrected you, but I decided to let it slide. Truth be told, I wanted an excuse to get that man out of here anyway.
+
+[r]
+You could’ve just helped blame the fart on him with me, you know. Would’ve made this a lot easier.
+
+show barkeep/happy barkeep
+
+[b]
+I know. But it was much more fun watching to see what you’d do.
+
+[r]
+Can’t argue with that.
+
+[r]
+Anyway. … Another beer?
+
+show barkeep/muscles barkeep
+
+[b]
+Coming right up.
+
+null
+He’s not kicking me out, and I successfully convinced the other patrons that fart didn’t come from me.
+
+null
+Ahhhh… yup. All in a day’s work for Ron Ansar. They don’t call me the Based Attorney for nothing.
+
+hideCanvas
+
+switchCamera Black 2
+
+wait 3.5
+
+loadScene MainMenu
