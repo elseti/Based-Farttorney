@@ -132,34 +132,43 @@ public class DialogueManager : Singleton<DialogueManager>
     // Increase the next index and play next dialogue
     private void NextDialogue()
     {
-        if (_currDialogueIndex >= _currDialogueList.Count - 1)
+        try
         {
-            isDialoguePlaying = false;
-            EndDialogue();
-        }
-        else
-        {
-            if (canClick)
+            if (_currDialogueIndex >= _currDialogueList.Count - 1)
             {
-                audioManager.interfaceAudio.PlayOneShot(_dialogueContinueSfx);
-                _currDialogueIndex++;
-            
-                // check if it is an Action
-                if(_currDialogueList[_currDialogueIndex].GetAction() != null)
-                {
-                    print("ACTION " + _currDialogueList[_currDialogueIndex].GetAction().GetActionName() + " PLAYED!");
-                    // TODO- if(action cannot be clicked to continue...):
-                
-                    PlayAction(_currDialogueList[_currDialogueIndex].GetAction());
-                    NextDialogue();
-                }
-                else
-                {
-                    PlayDialogue();
-                }
+                isDialoguePlaying = false;
+                EndDialogue();
             }
-            
+            else
+            {
+                if (canClick)
+                {
+                    audioManager.interfaceAudio.PlayOneShot(_dialogueContinueSfx);
+                    _currDialogueIndex++;
+
+                    // check if it is an Action
+                    if (_currDialogueList[_currDialogueIndex].GetAction() != null)
+                    {
+                        print("ACTION " + _currDialogueList[_currDialogueIndex].GetAction().GetActionName() +
+                              " PLAYED!");
+                        // TODO- if(action cannot be clicked to continue...):
+
+                        PlayAction(_currDialogueList[_currDialogueIndex].GetAction());
+                        NextDialogue();
+                    }
+                    else
+                    {
+                        PlayDialogue();
+                    }
+                }
+
+            }
         }
+        catch
+        {
+            Debug.Log("@NextDialogue: Error");
+        }
+        
     }
 
     private void EndDialogue()
@@ -383,15 +392,19 @@ public class DialogueManager : Singleton<DialogueManager>
     
     
     // GAMEPLAY FUNCTIONS
+
+    public void FadeOut(float time, bool wait = false)
+    {
+        cameraManager.SwitchCamera("Black", time);
+        if(wait) StartCoroutine(WaitCoroutine(time));
+    }
     public void GameOver(string ending)
     {
         canvasManager.HideCanvas();
         canvasManager.HideChoices();
         audioManager.bgmAudio.Stop();
         EndDialogue();
-        
-        cameraManager.SwitchCamera("Black", 3f);
-        StartCoroutine(WaitCoroutine(3f));
+        FadeOut(2f);
         switch (ending)
         {
             case "fart":

@@ -15,6 +15,8 @@ namespace Gameplay_Scripts
 
         private Vector2 _randomPosition;
 
+        private Coroutine _waitCoroutine;
+
         void Start()
         {
             _randomPosition = new Vector2(Random.Range(0, Screen.width), Random.Range(0, Screen.height));
@@ -33,7 +35,10 @@ namespace Gameplay_Scripts
         public void VomitButtonPressed()
         {
             this.gameObject.GetComponent<AudioSource>().PlayOneShot(vomitSfx);
-            DialogueManager.instance.GameOver("vomit");
+            if (_waitCoroutine == null)
+            {
+                _waitCoroutine = StartCoroutine(WaitForAudioCompletion(vomitSfx));
+            }
         }
 
         private void MoveButtonRandomly()
@@ -58,6 +63,13 @@ namespace Gameplay_Scripts
 
             // Optionally, you can check if the button is close to the target position and set a new random position
             
+        }
+
+        private IEnumerator WaitForAudioCompletion(AudioClip audioClip)
+        {
+            yield return new WaitForSeconds(audioClip.length);
+            _waitCoroutine = null;
+            DialogueManager.instance.GameOver("vomit");
         }
     }
 }

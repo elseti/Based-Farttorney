@@ -4,8 +4,12 @@ And if you were all here, then it’s just as likely that one of you did it!
 [r]
 How do we know it wasn’t one of you, and now you’re trying to pass the blame by framing the drunk guy?
 
+show lady/stressed lady
+
 [w]
 Thought you said you weren’t drunk.
+
+show jock/accusing jock
 
 [j]
 I know what I heard. It definitely came from your side of the room.
@@ -13,8 +17,12 @@ I know what I heard. It definitely came from your side of the room.
 [r]
 Oh yeah? Well, how do you know it wasn’t an echo? 
 
+show jock/angry jock
+
 [j]
 If it wasn’t you, then who are you suggesting it was?
 
 [r]
 Easy. It was…
+
+choice ME *fart*:Scripts/Jock/choice4_ansJock | The dumb jock!:Scripts/Jock/choice4_ansJock | The office lady!:Scripts/Jock/choice4_ansJock | The sleazy old man!:Scripts/Jock/choice4_ansJock | The bartender!:Scripts/Jock/choice4_ansJock

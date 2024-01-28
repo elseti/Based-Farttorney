@@ -2,6 +2,8 @@ hideCanvas
 
 showCanvas
 
+show barkeep/inquisitive barkeep
+
 [b]
 It wasn’t you?
 
@@ -10,20 +12,28 @@ No! I’ve been *burrrp* framed!
 
 switchCamera Lady
 
+show lady/judge lady
+
 [w]
 Nice try. Well, if it wasn’t you, then who was it?
 
 switchCamera OldMan
+
+show oldman/drool_left oldman
 
 [p]
 I bet it was the lovely madame. It would certainly explain why the smell was more… *ahem* fragrant than normal.
 
 switchCamera Lady
 
+show lady/disgusted lady
+
 [w]
 Ew! What the hell?
 
 switchCamera Jock
+
+show jock/accusing jock
 
 [j]
 Cut the crap. It was you and we all know it.

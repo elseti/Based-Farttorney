@@ -28,6 +28,8 @@ switchCamera Lady
 
 switchCamera OldMan
 
+show oldman/drool_left oldman
+
 [p]
 *heavy breathing*...
 
@@ -77,6 +79,8 @@ I mean, I DID, but they don’t need to know that!
 
 switchCamera OldMan
 
+show oldman/perv oldman
+
 [p]
 It was a loud one too, hehe… *sniffs* and it sounded real wet. Smells like someone had apple pie for dessert?
 
@@ -99,6 +103,8 @@ This is gross. I didn’t come here to sit next to perverts and creeps who **** 
 
 switchCamera OldMan
 
+show oldman/angry oldman
+
 [p]
 Yeah! This is supposed to be a classy establishment for cheap beer and even cheaper women!
 
@@ -109,14 +115,20 @@ switchCamera Lady
 
 switchCamera Barkeep
 
+show barkeep/angry barkeep
+
 [b]
 I hear you, ma’am.
+
+show barkeep/muscles barkeep
 
 [b]
 Sir, if you can’t control your bowels, I’m gonna have to ask you to leave before you stink up the whole room.
 
 [r]
 W-Wait! You don’t *hic* understand! I can’t leave.
+
+show barkeep/angry barkeep
 
 [b]
 Why not?

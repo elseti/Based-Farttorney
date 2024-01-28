@@ -3,8 +3,6 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor.Build.Content;
 
 /*
  * CanvasManager manages all dialogue/sprite/BG-related UI.
@@ -77,7 +75,7 @@ public class CanvasManager : MonoBehaviour
                 ladyPos.sprite = sprite;
                 break;
 
-            case "oldMan":
+            case "oldman":
                 SetAlphaSprite(oldManPos, 1f);
                 oldManPos.sprite = sprite;
                 break;
@@ -113,7 +111,7 @@ public class CanvasManager : MonoBehaviour
                 SetAlphaSprite(ladyPos, 0f);
                 break;
 
-            case "oldMan":
+            case "oldman":
                 SetAlphaSprite(oldManPos, 0f);
                 break;
             

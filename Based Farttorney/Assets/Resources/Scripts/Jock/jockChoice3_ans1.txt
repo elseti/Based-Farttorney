@@ -1,0 +1,140 @@
+switchCamera Jock_Cider 0.15
+
+show jock/idle jock
+
+[r]
+And look! He’s drinking a can of apple cider right now!
+
+switchCamera Lady 0.2
+
+show lady/shocked lady
+
+[w]
+*le gasp*
+
+switchCamera Jock 0.1
+
+show jock/angry jock
+
+[j]
+Th-This is so stupid!! That doesn’t prove anything!
+
+switchCamera OldMan
+
+show oldman/drool_right oldman
+
+[p]
+I don’t know… seems pretty decisive to me.
+
+switchCamera Jock 0.1
+
+show jock/accusing jock
+
+[j]
+You shut up! You’re the one that started this with your creepy fart-fetish. 
+
+[j]
+Smelling apples, my ass. You probably just made it up!
+
+switchCamera Lady 0.4
+
+show lady/idle lady
+
+[w]
+To be fair, farting is very immature behavior. Exactly what I’d expect from a college-aged male. You know, statistics show they’re the most selfish creatures on the planet.
+
+switchCamera Jock 0.1
+
+show jock/angry jock
+
+[j]
+I am literally studying to become a doctor!! I’m tryna save lives, bruh!
+
+[r]
+Save lives? Then why’d you drop a bomb on us? A stink-bomb, that is.
+
+show jock/accusing jock
+
+[j]
+I didn’t do it!!
+
+[r]
+Just think. What would your parents say? Knowing that they raised a liar… and a farter?
+
+[r]
+Decades of hard work and late nights, earning enough to put you through school, only for you to waste it all on a life of debauchery and flatulence. 
+
+show jock/crying jock
+
+[j]
+*sobs*
+
+[r]
+You cretin.
+
+[j]
+MOMMY!!!
+
+hide jock
+
+// play sfx run
+
+[j]
+*runs off*
+
+hideCanvas
+
+switchCamera Lady 2
+
+wait 2
+
+showCanvas
+
+[w]
+…
+
+switchCamera OldMan 2
+
+[p]
+…
+
+switchCamera Idle 2
+
+[r]
+…
+
+[r]
+Welp. That went well.
+
+switchCamera Barkeep
+
+show barkeep/muscles barkeep
+
+[b]
+Goddamnit, Ron. Y’know, if I had a nickel for every time you sent a twenty-year old running from my bar in tears, I’d have two nickels. Which isn’t much, but it’s weird it happened twice.
+
+[r]
+This is a good ending, right? I mean, you’d’ve sent him home anyway. He was the one who stank up the whole room.
+
+show barkeep/stern barkeep
+
+[b]
+Mhm. I’m sure he was.
+
+null
+The bartender doesn’t look convinced. 
+
+null
+But whatever. 
+
+null
+He’s not kicking me out, and I successfully convinced the other patrons that fart didn’t come from me.
+
+null
+Ahhhh… yup. All in a day’s work for Ron Ansar. They don’t call me the Based Attorney for nothing.
+
+hideCanvas
+
+switchCamera Black 2
+
+wait 2

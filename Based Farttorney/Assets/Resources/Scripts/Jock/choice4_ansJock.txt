@@ -1,0 +1,63 @@
+switchCamera Jock 0.2
+
+show jock/accusing jock
+
+[j]
+Who you callin’ “dumb jock”? I’m studying to become a doctor, you know.
+
+[r]
+Whaaat? Then why do you look so dumb?
+
+show jock/angry jock
+
+[j]
+Excuse me?
+
+switchCamera OldMan
+
+show oldman/drool_right oldman
+
+[p]
+I think it’s the cap. After all, what man wears a cap unless he wants to hide his eyes. Pretty sketchy. Believe me, I would know.
+
+switchCamera Jock 0.2
+
+show jock/accusing jock
+
+[j]
+I’m not even covering my eyes, bro. It’s a backwards cap!
+
+switchCamera Lady 0.4
+
+show lady/judge lady
+
+[w]
+I hate to agree with that creep, but I do kinda have a thing where I refuse to trust anyone in a sweatshirt. It’s like, why try so hard to be both a sweater and a hoodie? Just pick one.
+
+switchCamera Jock 0.3
+
+show jock/crying jock
+
+[j]
+Dude, why y’all ripping on my fashion choices?! That doesn’t have **** to do with what’s going on!
+
+[r]
+What’s going on is I’m going to expose you for being a farter and a farter-framer, you farter!
+
+show jock/accusing jock
+
+[j]
+I’d like to see you try, man. Go on! Where’s your precious evidence?
+
+[j]
+I shouldn’t be the one to tell you this, since you’re the lawyer, but don’t you need evidence to build a case against someone? Right now, you have nothing - except that wadded-up gum stuck to your chest.
+
+null
+Aha! But little does he know I can literally pull evidence… OUT OF MY ***.
+
+//sound of table slamming AA style
+
+[r]
+Observe! This crucial piece of evidence that points to you is…
+
+choice The smell of the fart!:Scripts/Jock/jockChoice1_ans1 | This piece of gum!:Scripts/Jock/jockChoice1_ans1 | The bartender’s mustache!:Scripts/Jock/jockChoice1_ans1

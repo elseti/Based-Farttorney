@@ -28,7 +28,7 @@ namespace Gameplay_Scripts
         public void FartButtonPressed()
         {
             this.gameObject.GetComponent<AudioSource>().PlayOneShot(fartSfx);
-            DialogueManager.instance.GameOver("fart");
+            StartCoroutine(WaitForAudioCompletion(fartSfx));
         }
 
         private void ShowFartButton()
@@ -63,7 +63,11 @@ namespace Gameplay_Scripts
         
         // TODO - resize button randomly
 
-        
+        public IEnumerator WaitForAudioCompletion(AudioClip audioClip)
+        {
+            yield return new WaitForSeconds(audioClip.length);
+            DialogueManager.instance.GameOver("fart");
+        }
         
     }
 }

@@ -2,6 +2,10 @@ hideCanvas
 
 showCanvas
 
+switchCamera Lady
+
+show lady/cocky lady
+
 [w]
 And how are you gonna do that?
 
@@ -20,11 +24,19 @@ I passed the bar. I spent thousands and thousands of dollars in tuition. I slave
 [r]
 All so I could become the accomplished lawyer that I am today. And with my hard-earned law degree, I’m going to prove that the person behind that massive, wet fart wasn’t me!
 
+switchCamera Jock
+
+show jock/cocky jock
+
 [j]
 Cool speech bro… but you also just stuck a wad of chewing gum to your chest.
 
 [r]
 Oh. Wait, then where’s my Attorney’s badge?
+
+switchCamera Idle
+
+show lady/stressed lady
 
 [w]
 You’re way too drunk for this.
@@ -32,8 +44,12 @@ You’re way too drunk for this.
 [r]
 no u
 
+show barkeep/sad barkeep
+
 [b]
 *sigh* I don’t make enough money for this ****.
+
+show barkeep/stern barkeep
 
 [b]
 Okay, look. In the spirit of fairness, if you can prove that someone else was responsible for… you know… then you may stay, and the actual culprit will be escorted off the premises.
@@ -44,14 +60,28 @@ Hell yes!
 [r]
 Now, why is everyone so convinced that I’m the one who did it?
 
+switchCamera Jock
+
+show jock/accusing jock
+
 [j]
 That **** was loud, bro. It came from the bar, right where you’re sitting. We all heard it.
+
+switchCamera OldMan
+
+show oldman/accusing oldman
 
 [p]
 And smelled it!
 
+switchCamera Lady
+
+show lady/stressed lady
+
 [w]
 And you’re clearly drunk enough to have done it and not even realized.
+
+switchCamera Idle
 
 [r]
 That doesn’t prove anything! After all…

@@ -1,0 +1,42 @@
+switchCamera Lady
+
+show lady/judge lady
+
+[w]
+Great. You too? What is it with you creeps and sniffing farts?
+
+[r]
+Wha- That’s not what I meant!
+
+[r]
+The smell of the fart actually provides us with a damning piece of evidence!
+
+switchCamera Jock 0.4
+
+show jock/cocky jock
+
+[j]
+Can’t wait to hear what this is gonna be…
+
+switchCamera Idle 2
+
+[r]
+Earlier, the esteemed gentleman here reported smelling something when the *ahem* incident occurred.
+
+show lady/disgusted lady
+
+[w]
+“Esteemed gentleman”?
+
+show oldman/perv oldman
+
+[p]
+Oho! I do like the sound of that. Good on you to respect your elders, kid.
+
+[j]
+That’s cuz he was the only weirdo who inhaled deeply while the rest of us held our breaths.
+
+[r]
+And what was it he smelled? That’s right. It was…
+
+choice …I can’t remember. Time to jog my memory! *fart*:Scripts/Jock/jockChoice2_ans2 | Apple pie!: Scripts/Jock/jockChoice2_ans2 | Roast chicken!:Scripts/Jock/jockChoice2_ans2 | Rotten eggs!:Scripts/Jock/jockChoice2_ans2
