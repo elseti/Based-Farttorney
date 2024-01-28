@@ -25,4 +25,4 @@ If it wasn’t you, then who are you suggesting it was?
 [r]
 Easy. It was…
 
-choice ME *fart*:Scripts/Jock/choice4_ansJock | The dumb jock!:Scripts/Jock/choice4_ansJock | The office lady!:Scripts/Jock/choice4_ansJock | The sleazy old man!:Scripts/Jock/choice4_ansJock | The bartender!:Scripts/Jock/choice4_ansJock
+choice ME *fart*:Scripts/Jock/choice4_ansJock | The dumb jock!:Scripts/Jock/choice4_ansJock | The office lady!:Scripts/Lady/choice4_ansLady | The sleazy old man!:Scripts/Jock/choice4_ansJock | The bartender!:Scripts/Jock/choice4_ansJock

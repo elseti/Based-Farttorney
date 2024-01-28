@@ -383,6 +383,7 @@ public class DialogueManager : Singleton<DialogueManager>
         try
         {
             SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
+            Destroy(this.gameObject);
         }
         catch
         {
@@ -408,12 +409,14 @@ public class DialogueManager : Singleton<DialogueManager>
         switch (ending)
         {
             case "fart":
+                Destroy(this.gameObject);
                 break;
             
             case "vomit":
+                Destroy(this.gameObject);
                 break;
-            
         }
+        
     }
 
 }

@@ -1,0 +1,255 @@
+switchCamera OldMan 0
+
+show oldman/angry oldman
+
+[p]
+NO!!
+
+switchCamera Lady 1
+
+show lady/judge lady
+
+[w]
+…
+
+[w]
+Putting aside that obvious overreaction…
+
+[w]
+Is that seriously what you think? Me and this barkeep are, what, a couple?
+
+[w]
+I mean, don’t get me wrong, sir. You’re a very handsome man and that is a very handsome mustache…
+
+switchCamera Barkeep 0.3
+
+show barkeep/happy barkeep
+
+[b]
+Why, thank you.
+
+switchCamera Lady 1
+
+show lady/stressed lady
+
+[w]
+But that doesn’t point to any sort of connection with us. What, because I dress nice and he does a bit of personal grooming?
+
+[r]
+Sure, it may seem like circumstantial evidence. But look at the facts.
+
+[r]
+She’s here alone, sits right up at the bar to be harassed by a creepy old man, and barely drinks anything. Why would she do that to “relax”, as she claims?
+
+[r]
+Is it possible she has some other motive? Such as… to spend some time watching her man at work?
+
+switchCamera OldMan 0.1
+
+show oldman/shocked oldman
+
+[p]
+Uh… I’d like to revisit that “harassed by a creepy old man” part?
+
+[r]
+Denied.
+
+switchCamera Lady 0.3
+
+show lady/judge lady
+
+[w]
+Okay, look. The bartender and I aren’t lovers. And even if we were, what does that have to do with the fart?
+
+[r]
+Well, it’s obvious. You farted, and he’s obviously not gonna throw his lover out the bar.
+
+[r]
+So you’re conspiring to pin it all on me instead! The helpless, innocent, and very sober lawyer!
+
+show lady/stressed lady
+
+[w]
+Okay, you know what? I’m tired of this. At this point, I don’t even care who farted. I’m leaving.
+
+[w]
+And since you’re so convinced that I’m the bartender’s secret lover and he’d NEVER kick me out, then I’ll prove you wrong.
+
+show lady/cocky lady
+
+[w]
+I take responsibility for the fart, sir. So go ahead. Kick me out. This night was a bust anyway.
+
+switchCamera Barkeep
+
+show barkeep/stern barkeep
+
+[b]
+…
+
+show barkeep/sad barkeep
+
+[b]
+…
+
+show barkeep/angry barkeep
+
+[b]
+… No.
+
+switchCamera Lady 0
+
+show lady/shocked lady
+
+[w]
+Excuse me?
+
+switchCamera Idle 2
+
+show oldman/shocked oldman
+
+show jock/idle jock
+
+show barkeep/muscles barkeep
+
+[b]
+I’m not kicking you out, ma’am. You may stay.
+
+[w]
+I- Huh?
+
+show jock/satisfied jock
+
+[j]
+Oh ****. Plot twist, baby!!
+
+show barkeep/angry barkeep
+
+[b]
+She’s not the one who farted. She shouldn’t have to leave.
+
+show oldman/angry oldman
+
+[p]
+And what makes you so sure of that?
+
+[w]
+What are you doing right now?
+
+switchCamera Barkeep
+
+[b]
+...
+
+show barkeep/stern barkeep
+
+[b]
+It was me. I did it.
+
+[r]
+HUH?!?
+
+show barkeep/happy barkeep
+
+[b]
+I'm the one who farted.
+
+[b]
+So, please. Let’s drop this and not force anyone to leave the bar.
+
+switchCamera Lady
+
+[w]
+Why are you doing this?
+
+switchCamera Barkeep
+
+show barkeep/sad barkeep
+
+[b]
+*sigh*...
+
+switchCamera Idle
+
+show barkeep/muscles barkeep
+
+[b]
+Another drink, ma’am? On the house. As an apology for spoiling your night.
+
+[w]
+Oh. Well… sure. I’d like that.
+
+show jock/accusing jock
+
+[j]
+Holy crap. They do like each other!
+
+show lady/stressed lady
+
+[w]
+Oh, be quiet.
+
+[p]
+Ngh… how could I have let this happen?
+
+switchCamera Barkeep
+
+show barkeep/idle barkeep
+
+[r]
+So, uh… barkeep. 
+
+show barkeep/inquisitive barkeep
+
+[b]
+Hmm?
+
+[r]
+They’re not listening in anymore, so uh… you wanna tell me why you took the fall for a fart that wasn’t yours?
+
+show barkeep/stern barkeep
+
+[b]
+…
+
+[r]
+You really do like that woman, don’t you?
+
+show barkeep/happy barkeep
+
+[b]
+… Perhaps.
+
+[r]
+You sly dog. Well, if it’s any consolation, I think she likes you too!
+
+[r]
+Why else do you think she stayed this long in such a ****** place? Er, no offense.
+
+[r]
+Clearly, she was waiting for an opening to chat you up. That, or she just wanted to watch you work.
+
+[r]
+Wow. I can’t believe I went from lawyer to matchmaker, just like that.
+
+show barkeep/stern barkeep
+
+[b]
+Alright, enough. I’m not kicking you out for what you did, so drop the subject and just keep drinking.
+
+[r]
+Yes, sir.
+
+null
+Well, it’s not the outcome I was expecting, but he’s not kicking me out, and I successfully convinced the other patrons that fart didn’t come from me.
+
+null
+Ahhhh… yup. All in a day’s work for Ron Ansar. They don’t call me the Based Attorney for nothing.
+
+hideCanvas
+
+switchCamera Black 2
+
+wait 3.5
+
+loadScene MainMenu

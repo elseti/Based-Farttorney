@@ -3117,7 +3117,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -454, y: -255}
+  m_AnchoredPosition: {x: -454, y: -265}
   m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1132029169
@@ -3451,7 +3451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d475fcf2b690b48a28acbbabdb982ae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueTextPath: Scripts/Act_1/choice3_ans1
+  dialogueTextPath: Scripts/Lady/ladyChoice3_ans1
   dialogueConstants: {fileID: 11400000, guid: b407b08378cd043f1a3b6d9290f6bd45, type: 2}
   dialogueVariableText: {fileID: 4900000, guid: d59ff553eaf14bf09a1b54129d36e807,
     type: 3}
@@ -3907,7 +3907,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -372}
+  m_AnchoredPosition: {x: 0, y: -382}
   m_SizeDelta: {x: 1400, y: 290}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1454405939

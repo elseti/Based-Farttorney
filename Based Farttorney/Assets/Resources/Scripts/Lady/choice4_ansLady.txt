@@ -1,0 +1,68 @@
+switchCamera Lady 0.3
+
+show lady/judge lady
+
+[w]
+Oh! The nerve.
+
+[w]
+How dare you. I am a lady.
+
+switchCamera OldMan
+
+show oldman/drool_left oldman
+
+[j]
+It’s true. Women don’t fart!
+
+switchCamera Lady 0.3
+
+show lady/disgusted lady
+
+[w]
+…
+
+show lady/stressed lady
+
+[w]
+You’re defending me, so I’m gonna allow that.
+
+switchCamera OldMan
+
+show oldman/perv oldman
+
+[p]
+I don’t know… I’ve smelled plenty of farts in my day, and lemme tell you, women’s farts do hit different. If that fart just now didn’t come from her, then why was it so aromatic? 
+
+[p]
+You tellin’ me a man produced such a fine fart? Highly unlikely.
+
+switchCamera Lady 0.3
+
+show lady/disgusted lady
+
+[w]
+Oh my God. Can we stop talking about the fart like it’s some delicacy in a French restaurant? Who cares what it smelled like?
+
+show lady/judge lady
+
+[w]
+And also, it wasn’t mine!!
+
+show lady/stressed lady
+
+[w]
+I can’t believe this. All I wanted was to relax, have a nice glass of beer to unwind after a long day’s work. Now look what I have to deal with.
+
+show lady/cocky lady
+
+[w]
+Where’s your proof that it was me? That’s what counts in a court of law, doesn’t it?
+
+null
+Aha! But little does she know I can literally pull evidence… OUT OF MY ***.
+
+[r]
+Observe! This crucial piece of evidence that points to you is…
+
+choice The smell of the fart!:Scripts/Lady/ladyChoice1_ans3 | This piece of gum!:Scripts/Lady/ladyChoice1_ans3 | The bartender’s mustache!:Scripts/Lady/ladyChoice1_ans3

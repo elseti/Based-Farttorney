@@ -1,0 +1,94 @@
+switchCamera Lady 0.3
+
+show lady/judge lady
+
+[w]
+Yeah? Is that a crime, to want to relax after being stuck in a soulless corporate box for nine hours straight?
+
+[r]
+Nope, of course not, the workforce is a nightmare.
+
+[r]
+But also, I can’t imagine this place being relaxing in any way, shape or form, especially coming here as a woman, alone.
+
+[r]
+This guy here hasn’t stopped hitting on you or making gross comments all evening.
+
+switchCamera OldMan 0.15
+
+show oldman/angry oldman
+
+[p]
+“Gross”?
+
+switchCamera Lady 0.15
+
+show lady/stressed lady
+
+[w]
+That’s fair.
+
+[r]
+You’re sitting alone at the bar with no drink in hand.
+
+show lady/judge lady
+
+[w]
+I had a beer.
+
+[r]
+Yeah, one beer. That’s barely enough to relax anyone. It’s almost more of a courtesy drink than anything.
+
+show lady/stressed lady
+
+[w]
+What are you implying? And what does that have to do with the bartender’s moustache?
+
+switchCamera Barkeep 0.3
+
+show barkeep/stern barkeep
+
+[b]
+Yes, I would rather like to hear the end of this bewildering argument myself.
+
+switchCamera Lady 0.3
+
+show lady/judge lady
+
+[r]
+It’s simple. Look at this woman. She’s not relaxing right now. She’s doing the furthest thing from relaxing, by stepping into this bar.
+
+[w]
+It’s because my fellow patrons are creeps, perverts and farters!
+
+[r]
+That means she’s here for another reason. What could it be?
+
+[r]
+Look at her dress. Only someone with immaculate fashion sense would know to pair a dress so gorgeous with earrings that fancy.
+
+switchCamera Jock 0
+
+show jock/cocky jock
+
+[j]
+They would? Who made you the expert on fashion, Mr. Lawyer?
+
+switchCamera Barkeep
+
+show barkeep/idle barkeep
+
+[r]
+Now look at the bartender’s mustache. Majestic, well-trimmed, perfectly groomed to the point it almost takes a life of its own…
+
+show barkeep/inquisitive barkeep
+
+[b]
+…
+
+switchCamera Idle
+
+[r]
+Isn’t it obvious? This woman and the bartender… their relationship is obvious.
+
+choice They’re lovers!:Scripts/Lady/ladyChoice3_ans1 | They’re enemies!:Scripts/Lady/ladyChoice3_ans1 | They’re farters! *fart*:Scripts/Lady/ladyChoice3_ans1

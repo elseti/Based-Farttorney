@@ -1,0 +1,30 @@
+switchCamera Barkeep
+
+show barkeep/inquisitive barkeep
+
+[b]
+…
+
+switchCamera Lady
+
+show lady/judge lady
+
+[w]
+Uhh… what.
+
+switchCamera Jock
+
+show jock/satisfied jock
+
+[j]
+What is blud waffling about? All that fart-smell must’ve driven him loopy. Bro’s completely lost it!
+
+switchCamera Idle 2
+
+[r]
+Nuh-uh. I’m completely lucid. And sober, don’t forget how sober I am.
+
+[r]
+You see, I kept wondering about something you said, ma’am. You said you came into this bar…
+
+choice To relax!:Scripts/Lady/ladyChoice2_ans1 | To work!:Scripts/Lady/ladyChoice2_ans1 | To fart!:Scripts/Lady/ladyChoice2_ans1

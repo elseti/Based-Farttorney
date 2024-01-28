@@ -137,4 +137,6 @@ hideCanvas
 
 switchCamera Black 2
 
-wait 2
+wait 3
+
+loadScene MainMenu
