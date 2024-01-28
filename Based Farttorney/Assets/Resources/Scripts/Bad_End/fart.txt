@@ -1,0 +1,49 @@
+switchCamera Idle
+
+playSfx fart02
+
+[w]
+You LITERALLY just farted!
+
+playSfx fart02
+
+[r]
+Yeah *fart* but that doesn’t mean it was me the first time. *fart*
+
+[w]
+AND YOU’RE STILL FARTING.
+
+playSfx fart02
+
+[r]
+Sorry! *fart* I can’t help it. *fart*
+
+[p]
+*inhales deeply*
+
+[j]
+Dude. What the **** is wrong with you?
+
+[w]
+I’m surrounded by lunatics.
+
+playSfx fart02
+
+[r]
+No, wait. *fart* Please, I can explain!
+
+[b]
+GEEEEET OUT!!
+
+null
+That coulda gone better.
+
+stopBgm
+
+hideCanvas
+
+switchCamera Black 2
+
+wait 3.5
+
+loadScene MainMenu

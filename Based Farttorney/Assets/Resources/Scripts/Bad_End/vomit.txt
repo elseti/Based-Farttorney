@@ -1,0 +1,39 @@
+switchCamera Idle
+
+playSfx man-vomiting-01
+
+[r]
+*aggressively vomits*
+
+show lady/shocked lady
+
+[w]
+OH MY GOD.
+
+[j]
+I'm gonna be sick.
+
+[w]
+HE JUST VOMITED ALL OVER MY NEW SHOES!
+
+[p]
+Even for me, this is getting too gross.
+
+[r]
+W-Wait! I'm sorry, I can explain-
+
+[b]
+GEEEEET OUT!!
+
+null
+That coulda gone better.
+
+stopBgm
+
+hideCanvas
+
+switchCamera Black 2
+
+wait 3.5
+
+loadScene MainMenu

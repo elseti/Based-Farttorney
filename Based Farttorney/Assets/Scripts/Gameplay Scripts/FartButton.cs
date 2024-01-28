@@ -34,6 +34,7 @@ namespace Gameplay_Scripts
 
         private void ShowFartButton()
         {
+            print("show fart button");
             this.transform.localPosition = GetRandomPosition(960f, 540f);
             this.gameObject.GetComponentInChildren<TextMeshProUGUI>().enabled = true;
             this.gameObject.GetComponent<Button>().enabled = true;
@@ -41,6 +42,7 @@ namespace Gameplay_Scripts
         }
         private void HideFartButton()
         {
+            print("hide fart button");
             this.gameObject.GetComponentInChildren<TextMeshProUGUI>().enabled = false;
             this.gameObject.GetComponent<Button>().enabled = false;
             this.gameObject.GetComponent<Image>().enabled = false;

@@ -40,4 +40,4 @@ show jock/accusing jock
 [j]
 Cut the crap. It was you and we all know it.
 
-choice It wasn’t me! *fart*:Scripts/Act_1/choice2_ans2 | I can prove it wasn’t me!:Scripts/Act_1/choice2_ans2 | *vomit everywhere*:Scripts/Act_1/choice2_ans2
+choice It wasn’t me! *fart*:Scripts/Bad_End/fart | I can prove it wasn’t me!:Scripts/Act_1/choice2_ans2 | *vomit everywhere*:Scripts/Bad_End/vomit
