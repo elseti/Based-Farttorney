@@ -601,8 +601,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1444,6 +1444,7 @@ MonoBehaviour:
   speakerBoxText: {fileID: 10113106}
   choiceLocation: {fileID: 1542210437}
   choiceBox: {fileID: 261057245}
+  instantiatedChoices: []
   typingDone: 0
 --- !u!1 &613428622
 GameObject:
@@ -3461,6 +3462,8 @@ MonoBehaviour:
   variableManager: {fileID: 338979999}
   cameraManager: {fileID: 1239828600}
   canClick: 1
+  vomitButton: {fileID: 1789362315}
+  fartButton: {fileID: 1298536424}
 --- !u!1 &1298536424
 GameObject:
   m_ObjectHideFlags: 0
@@ -4383,7 +4386,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1789362316
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4402,7 +4405,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 233}
-  m_SizeDelta: {x: 250, y: 200}
+  m_SizeDelta: {x: 400, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &1789362317
 AudioSource:
@@ -4607,7 +4610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveButton: {fileID: 1789362318}
-  moveSpeed: 500
+  moveSpeed: 5000
   vomitSfx: {fileID: 8300000, guid: 24e7fbc45c05741d49f3d53d69a038bd, type: 3}
 --- !u!1 &1816910486
 GameObject:

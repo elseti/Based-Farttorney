@@ -171,6 +171,7 @@ public class CanvasManager : MonoBehaviour
 
     public void AddChoiceBox(string[] choiceTextList, string[] choiceScriptList)
     {
+        DialogueManager.instance.EnableVomitButton();
         ShowChoices();
         float buttonGap = 120f;
         speakerBox.gameObject.SetActive(false);
@@ -199,7 +200,7 @@ public class CanvasManager : MonoBehaviour
                 Destroy(instantiatedChoices[x].gameObject);
             }
         }
-        
+        DialogueManager.instance.DisableVomitButton();
         DialogueManager.instance.canClick = true;
         
         speakerBox.gameObject.SetActive(true);

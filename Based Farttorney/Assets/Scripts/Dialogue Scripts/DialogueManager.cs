@@ -50,6 +50,10 @@ public class DialogueManager : Singleton<DialogueManager>
     [HideInInspector]
     public bool canClick = true;
     
+    // vomit / fart buttons
+    public GameObject vomitButton;
+    public GameObject fartButton;
+    
     
     private void Start()
     {
@@ -399,6 +403,27 @@ public class DialogueManager : Singleton<DialogueManager>
         cameraManager.SwitchCamera("Black", time);
         if(wait) StartCoroutine(WaitCoroutine(time));
     }
+
+    public void EnableVomitButton()
+    {
+        vomitButton.SetActive(true);
+    }
+
+    public void DisableVomitButton()
+    {
+        vomitButton.SetActive(false);
+    }
+
+    public void EnableFartButton()
+    {
+        fartButton.SetActive(true);
+    }
+
+    public void DisableFartButton()
+    {
+        fartButton.SetActive(false);
+    }
+    
     public void GameOver(string ending)
     {
         canvasManager.HideCanvas();

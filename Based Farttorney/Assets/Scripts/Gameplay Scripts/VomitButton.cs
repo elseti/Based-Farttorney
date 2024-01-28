@@ -46,16 +46,16 @@ namespace Gameplay_Scripts
             // Get the RectTransform component of the button
             RectTransform rectTransform = moveButton.GetComponent<RectTransform>();
 
-            // if (Random.Range(0, 1) < 0.000000000000001)
-            // {
-            //     _randomPosition = new Vector2(Random.Range(0, Screen.width), Random.Range(0, Screen.height));
-            //     print(_randomPosition);
-            // }
-            
-            if (Vector2.Distance(rectTransform.position, _randomPosition) < 1f)
+            if (Random.Range(0, 1) < 0.000000000000001)
             {
                 _randomPosition = new Vector2(Random.Range(0, Screen.width), Random.Range(0, Screen.height));
+                print(_randomPosition);
             }
+            
+            // if (Vector2.Distance(rectTransform.position, _randomPosition) < 1f)
+            // {
+            //     _randomPosition = new Vector2(Random.Range(0, Screen.width), Random.Range(0, Screen.height));
+            // }
             
             // Move the button towards the random position
             rectTransform.position =
