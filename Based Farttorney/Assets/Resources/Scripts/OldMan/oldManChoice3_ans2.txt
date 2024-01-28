@@ -67,4 +67,4 @@ That’s what?
 [r]
 Did you all hear what he said? He said...
 
-choice Two beefy boys:Scripts/OldMan/oldManChoice4_ans2 | Tiny golden pin:Scripts/OldMan/oldManChoice4_ans2 | I got guns:Scripts/OldMan/oldManChoice4_ans2
+choice Two beefy boys:Scripts/Bad_End/vomit | Tiny golden pin:Scripts/OldMan/oldManChoice4_ans2 | I got guns:Scripts/Bad_End/fart

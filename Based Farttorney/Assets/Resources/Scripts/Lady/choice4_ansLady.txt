@@ -8,9 +8,9 @@ Oh! The nerve.
 [w]
 How dare you. I am a lady.
 
-switchCamera OldMan
+switchCamera Jock
 
-show oldman/drool_left oldman
+show jock/cocky jock
 
 [j]
 It’s true. Women don’t fart!
@@ -65,4 +65,4 @@ Aha! But little does she know I can literally pull evidence... OUT OF MY ***.
 [r]
 Observe! This crucial piece of evidence that points to you is...
 
-choice The smell of the fart!:Scripts/Lady/ladyChoice1_ans3 | This piece of gum!:Scripts/Lady/ladyChoice1_ans3 | The bartender’s mustache!:Scripts/Lady/ladyChoice1_ans3
+choice The smell of the fart!:Scripts/Bad_End/fart | This piece of gum!:Scripts/Bad_End/vomit | The bartender’s mustache!:Scripts/Lady/ladyChoice1_ans3

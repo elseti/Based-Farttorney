@@ -60,4 +60,4 @@ Aha! But little does he know I can literally pull evidence... OUT OF MY ***.
 [r]
 Observe! This crucial piece of evidence that points to you is...
 
-choice The smell of the fart!:Scripts/Jock/jockChoice1_ans1 | This piece of gum!:Scripts/Jock/jockChoice1_ans1 | The bartender’s mustache!:Scripts/Jock/jockChoice1_ans1
+choice The smell of the fart!:Scripts/Jock/jockChoice1_ans1 | This piece of gum!:Scripts/Bad_End/vomit | The bartender’s mustache!:Scripts/Bad_End/fart

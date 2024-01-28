@@ -157,8 +157,7 @@ public class DialogueManager : Singleton<DialogueManager>
                     // check if it is an Action
                     if (_currDialogueList[_currDialogueIndex].GetAction() != null)
                     {
-                        print("ACTION " + _currDialogueList[_currDialogueIndex].GetAction().GetActionName() +
-                              " PLAYED!");
+                        // print("ACTION " + _currDialogueList[_currDialogueIndex].GetAction().GetActionName() +" PLAYED!");
                         // TODO- if(action cannot be clicked to continue...):
 
                         PlayAction(_currDialogueList[_currDialogueIndex].GetAction());

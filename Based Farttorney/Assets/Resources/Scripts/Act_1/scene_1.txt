@@ -149,4 +149,4 @@ You’re smart. You’re a lawyer, dammit. Not just a lawyer - I’m a goddamn D
 null
 Time to come up with a perfectly logical reason as to why I shouldn’t leave.
 
-choice I **** MYSELF:Scripts/choice1_ans1 | Someone glued my ass to the chair:Scripts/Act_1/choice1_ans1 | I didn’t fart, so why should I leave?:Scripts/Act_1/choice1_ans1 | *vomit everywhere* : Scripts/Act_1/choice1_ans1
+choice I **** MYSELF:Scripts/Bad_End/Fart | Someone glued my ass to the chair:Scripts/Bad_End/fart | I didn’t fart, so why should I leave?:Scripts/Act_1/choice1_ans1 | *vomit everywhere* : Scripts/Bad_End/vomit
