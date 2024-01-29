@@ -1658,8 +1658,8 @@ MonoBehaviour:
   speakerBoxText: {fileID: 10113106}
   choiceLocation: {fileID: 1542210437}
   choiceBox: {fileID: 261057245}
-  instantiatedChoices: []
   typingDone: 0
+  choiceSfx: {fileID: 8300000, guid: 70646ab4899f74b4eaf0c46ffe883d97, type: 3}
 --- !u!1 &613428622
 GameObject:
   m_ObjectHideFlags: 0

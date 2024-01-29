@@ -11,11 +11,23 @@ public class MenuController : MonoBehaviour
     public GameObject _msgLose, _msgTryAgain, _btnTryAgain;
     public AudioClip fartSfx;
     public AudioSource fartSource;
+    public Animator cinemachineAnimator;
 
     // change scenes to start and end game
+
+    public void Start()
+    {
+        cinemachineAnimator.Play("Main_Menu");
+        
+        // SceneManager.sceneLoaded += OnSceneLoaded;
+        //
+        // if (_msgLose != null && _msgTryAgain != null && _btnTryAgain != null)
+        //     StartCoroutine(FadeMessages());
+    }
     public void PlayGame()
     {
         fartSource.PlayOneShot(fartSfx);
+        cinemachineAnimator.Play("Main_Menu_Black");
         StartCoroutine(PlayGameCoroutine(2f));
     }
 
@@ -23,22 +35,14 @@ public class MenuController : MonoBehaviour
     {
         Application.Quit();
     }
-
-    // fade out joke message, fade in try again button
-    void Start()
-    {
-        SceneManager.sceneLoaded += OnSceneLoaded;
-
-        if (_msgLose != null && _msgTryAgain != null && _btnTryAgain != null)
-            StartCoroutine(FadeMessages());
-    }
-
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (_msgLose != null && _msgTryAgain != null && _btnTryAgain != null)
-            StartCoroutine(FadeMessages());
-    }
-
+    
+    // void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    // {
+    //     if (_msgLose != null && _msgTryAgain != null && _btnTryAgain != null)
+    //         StartCoroutine(FadeMessages());
+    // }
+    
+    /*
     IEnumerator FadeMessages()
     {
         Color m1Color = _msgLose.GetComponent<Image>().color, m2Color = _msgTryAgain.GetComponent<Image>().color, bColor = _btnTryAgain.GetComponent<Image>().color;
@@ -88,6 +92,7 @@ public class MenuController : MonoBehaviour
 
         // make try again button active
     }
+    */
     
     private IEnumerator QuitGameCoroutine(float waitTime)
     {
@@ -100,4 +105,5 @@ public class MenuController : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         SceneManager.LoadScene(_gameScene);
     }
+    
 }
