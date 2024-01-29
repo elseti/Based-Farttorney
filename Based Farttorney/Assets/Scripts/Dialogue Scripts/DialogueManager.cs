@@ -388,7 +388,7 @@ public class DialogueManager : Singleton<DialogueManager>
     private IEnumerator WaitCoroutine(float waitTime, bool canClickToContinue = false)
     {
         canClick = false;
-        audioManager.interfaceAudio.PlayOneShot(_silenceSfx);
+        audioManager.sfxAudio.PlayOneShot(_silenceSfx);
         yield return new WaitForSeconds(waitTime);
         canClick = true;
         NextDialogue();
@@ -409,6 +409,11 @@ public class DialogueManager : Singleton<DialogueManager>
     
     
     // GAMEPLAY FUNCTIONS
+
+    public void PlaySound(AudioClip audioClip)
+    {
+        audioManager.interfaceAudio.PlayOneShot(audioClip);
+    }
 
     public void FadeOut(float time, bool wait = false)
     {

@@ -9,8 +9,13 @@ Ron Ansar wakes up in a bar, accused of farting and defaecating (which he did). 
 # Team
 
 Writer - WholesomeWraith
+
 Programmer - Elseth
+
 2D Artist - Lapassorn
+
 UI Artist - Fool's Journey
+
 Menu/Icon Artist - Grace Chua
+
 Composer - Ji Rui

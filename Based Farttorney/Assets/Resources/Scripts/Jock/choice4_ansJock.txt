@@ -50,12 +50,13 @@ show jock/accusing jock
 I’d like to see you try, man. Go on! Where’s your precious evidence?
 
 [j]
-I shouldn’t be the one to tell you this, since you’re the lawyer, but don’t you need evidence to build a case against someone? Right now, you have nothing - except that wadded-up gum stuck to your chest.
+I shouldn’t be the one to tell you this, since you’re the lawyer, but don’t you need evidence to build a case against someone? 
+
+[j]
+Right now, you have nothing - except that wadded-up gum stuck to your chest.
 
 null
 Aha! But little does he know I can literally pull evidence... OUT OF MY ***.
-
-playSfx tableHit
 
 [r]
 Observe! This crucial piece of evidence that points to you is...

@@ -79,7 +79,7 @@ MOMMY!!!
 
 hide jock
 
-// play sfx run
+playSfx runHall
 
 [j]
 *runs off*

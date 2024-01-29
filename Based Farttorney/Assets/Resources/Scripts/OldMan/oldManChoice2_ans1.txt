@@ -54,6 +54,8 @@ hideCanvas
 
 wait 1.5
 
+showCanvas
+
 null
 ...
 

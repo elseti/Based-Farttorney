@@ -31,19 +31,22 @@ public class CanvasManager : MonoBehaviour
     // Choice boxes
     public Transform choiceLocation;
     public GameObject choiceBox;
-    public GameObject[] instantiatedChoices;
+    private GameObject[] _instantiatedChoices;
     
     // Coroutine for typing dialogue text
     public Coroutine typingCoroutine;
     
     // if typing coroutine is done or not
     [HideInInspector] public bool typingDone;
+    
+    // button for choice sound
+    public AudioClip choiceSfx;
 
     private void Start()
     {
         try
         {
-            instantiatedChoices = new GameObject[10];
+            _instantiatedChoices = new GameObject[10];
             textBoxText = textBox.GetComponentInChildren<TextMeshProUGUI>();
             speakerBoxText = speakerBox.GetComponentInChildren<TextMeshProUGUI>();
         }
@@ -180,7 +183,7 @@ public class CanvasManager : MonoBehaviour
         for (int x = 0; x < choiceTextList.Length; x++)
         {
             GameObject choice = Instantiate(choiceBox, choiceLocation);
-            instantiatedChoices[x] = choice;
+            _instantiatedChoices[x] = choice;
             choice.SetActive(true);
             choice.transform.localPosition = new Vector3(0, x * -buttonGap, 0);
             choice.GetComponentInChildren<TextMeshProUGUI>().text = choiceTextList[x];
@@ -192,12 +195,14 @@ public class CanvasManager : MonoBehaviour
 
     public void PlayScriptAfterChoice(string script)
     {
+        DialogueManager.instance.PlaySound(choiceSfx);
+        
         // print("played script " + script);
-        for (int x = 0; x < instantiatedChoices.Length; x++)
+        for (int x = 0; x < _instantiatedChoices.Length; x++)
         {
-            if (instantiatedChoices[x] != null)
+            if (_instantiatedChoices[x] != null)
             {
-                Destroy(instantiatedChoices[x].gameObject);
+                Destroy(_instantiatedChoices[x].gameObject);
             }
         }
         DialogueManager.instance.DisableVomitButton();
