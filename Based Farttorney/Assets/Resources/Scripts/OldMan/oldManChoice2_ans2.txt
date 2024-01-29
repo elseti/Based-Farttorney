@@ -33,4 +33,4 @@ But also, ridiculous. What makes you think that gum is even mine?
 [r]
 Because...
 
-choice I tasted your saliva on it:Scripts/Bad_End/vomit |  You have bad breath:Scripts/OldMan/oldManChoice3_ans2 | I said so:Scripts/Bad_End/fart
+choice I tasted your saliva on it:Scripts/OldMan/oldManChoice3_ans1 |  You have bad breath:Scripts/OldMan/oldManChoice3_ans2 | I said so:Scripts/OldMan/oldManChoice3_ans3

@@ -31,7 +31,7 @@ show barkeep/angry barkeep
 [b]
 GEEEEET OUT!!
 
-playSfx thunder
+playSfx fart_reverb_1
 
 switchCamera Black 0
 

@@ -1,46 +1,45 @@
-// Choice: Rotten eggs!
+// Choice: I tasted your saliva on it
 
-switchCamera Jock
+switchCamera Lady 0.15
 
-show jock/accusing jock
-
-[j]
-Ain’t that what all farts smell like?
-
-switchCamera OldMan
-
-show oldman/idle oldman
-
-[p]
-No, no, there’s subtle differences in every fart depending on what you eat. Haven’t you ever sniffed them yourself?
-
-switchCamera Jock
-
-show jock/angry jock
-
-[j]
-Dude, no one here is relating to you right now.
-
-switchCamera Lady
-
-show lady/stressed lady
+show lady/disgusted lady
 
 [w]
-I can’t believe I’m spending my Friday night listening to this.
+Eww! Why the **** did you taste his gum?
 
-switchCamera OldMan
+switchCamera OldMan 0.1
 
-show oldman/perv oldman
+show oldman/angry oldman
 
 [p]
-At any rate, it wasn’t just a rotten-egg smell. This fart had a special scent to it… something almost fruity in nature… I can’t quite recall…
+And how the hell do you know what my saliva tastes like? I thought I was the pervert here, not you.
 
-switchCamera Idle 0.3
+switchCamera Jock 0.4
 
-playSfx fart02
+show jock/idle jock
+
+[j]
+Doesn’t all saliva taste the same?
 
 [r]
-I can help jog your memory! *fart*
+No, there are subtle differences in the taste of all saliva.
+
+switchCamera Lady 0.3
+
+show lady/disgusted lady
+
+[w]
+Do I want to know how you know that?
+
+[r]
+Just like there are subtle differences in how every fart smells!
+
+playSfx fart01
+
+[r]
+Observe. *fart*
+
+switchCamera Idle
 
 show lady/disgusted lady
 
@@ -56,7 +55,7 @@ show jock/accusing jock
 Did he just-
 
 [r]
-I’m getting hints of… what’s that smell, cherry? No, pear.
+I’m getting hints of... what’s that smell, cherry? No, pear.
 
 show oldman/idle oldman
 
@@ -101,8 +100,6 @@ hideCanvas
 
 wait 1.5
 
-showCanvas
-
 null
 ...
 
@@ -113,6 +110,6 @@ hideCanvas
 
 switchCamera Black 2
 
-wait 3
+wait 3.5
 
 loadScene MainMenu

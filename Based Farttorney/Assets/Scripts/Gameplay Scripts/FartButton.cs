@@ -19,7 +19,6 @@ public class FartButton : MonoBehaviour
     {
         if (Random.Range(0, 1) < 0.25 && _appearCoroutine == null)
         {
-            print("starting coroutine");
             _appearCoroutine = StartCoroutine(AppearCoroutine(Random.Range(minAppearDuration, maxAppearDuration), Random.Range(minHideDuration, maxHideDuration)));
         }
     }
@@ -34,7 +33,6 @@ public class FartButton : MonoBehaviour
 
     private void ShowFartButton()
     {
-        print("show fart button");
         this.transform.localPosition = GetRandomPosition(960f, 540f);
         this.gameObject.GetComponentInChildren<TextMeshProUGUI>().enabled = true;
         this.gameObject.GetComponent<Button>().enabled = true;
@@ -42,23 +40,17 @@ public class FartButton : MonoBehaviour
     }
     private void HideFartButton()
     {
-        print("hide fart button");
         this.gameObject.GetComponentInChildren<TextMeshProUGUI>().enabled = false;
         this.gameObject.GetComponent<Button>().enabled = false;
         this.gameObject.GetComponent<Image>().enabled = false;
     }
     
     private IEnumerator AppearCoroutine(float appearTime, float hideTime){
-        print("start of coroutine");
         ShowFartButton();
         yield return new WaitForSecondsRealtime(appearTime);
         
-        print("middle of coroutine");
-        
         HideFartButton();
         yield return new WaitForSecondsRealtime(hideTime);
-        
-        print("end of coroutine");
         
         _appearCoroutine = null;
     }

@@ -91,4 +91,4 @@ switchCamera Idle
 [r]
 Isn’t it obvious? This woman and the bartender... their relationship is obvious.
 
-choice They’re lovers!:Scripts/Lady/ladyChoice3_ans1 | They’re enemies!:Scripts/Bad_End/vomit | They’re farters!:Scripts/Bad_End/fart
+choice They’re lovers!:Scripts/Lady/ladyChoice3_ans1 | They’re enemies!:Scripts/Lady/ladyChoice3_ans2 | They’re farters!:Scripts/Lady/ladyChoice3_ans3

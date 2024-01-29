@@ -42,7 +42,7 @@ Ah, crap.
 
 stopBgm
 
-playSfx thunder
+playSfx fart_reverb_1
 
 switchCamera Black 0
 

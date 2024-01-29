@@ -1,0 +1,79 @@
+// Choice: They’re farters! *fart*
+
+switchCamera Lady
+
+playSfx fart02
+
+show lady/disgusted lady
+
+[w]
+Did... did you JUST fart?
+
+playSfx fart02
+
+[r]
+Nuh-uh. That was you two. *fart* You know, cos you’re the farters.
+
+show lady/stressed lady
+
+[w]
+THAT DOESN’T EVEN MAKE SENSE.
+
+playSfx fart02
+
+[r]
+Yes, it does! *fart*
+
+switchCamera Idle
+
+show jock/satisfied jock
+
+[j]
+Bro can’t stop farting.
+
+[w]
+Stop, stop! You’re stinking up the whole bar!
+
+show oldman/perv oldman
+
+[p]
+No, no! Keep going. Please...
+
+show lady/shocked lady
+
+[w]
+BARKEEP!
+
+[r]
+Wait, please! I can explain, I-
+
+switchCamera Barkeep 0.15
+
+show barkeep/muscles barkeep
+
+[b]
+GEEEEET OUT!!
+
+playSfx fart_reverb_1
+
+stopBgm
+
+switchCamera Black 0
+
+hideCanvas
+
+wait 1.5
+
+null
+...
+
+null
+That coulda gone better.
+
+hideCanvas
+
+switchCamera Black 2
+
+wait 3.5
+
+loadScene MainMenu

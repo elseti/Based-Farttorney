@@ -1,8 +1,18 @@
 switchCamera Idle
 
+hideCanvas
+
 playSfx fart02
 
 wait 1
+
+showCanvas
+
+show lady/disgusted lady
+
+show oldman/shocked oldman
+
+show jock/idle jock
 
 [w]
 You LITERALLY just farted!

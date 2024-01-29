@@ -1,0 +1,148 @@
+// Choice: I got guns
+
+stopBgm
+
+switchCamera Idle
+
+show jock/cocky jock
+
+[j]
+That was cringe as ****, sure, but what’s that got to do with-
+
+show jock/idle jock
+
+show barkeep/stern barkeep
+
+show oldman/shocked oldman
+
+show lady/idle lady
+
+[r]
+How can he have guns... when the guns are right here??
+
+playSfx gunClick
+
+[r]
+*pulls out 9mm glock*
+
+playBgm energetic
+
+switchCamera Lady 0.1
+
+show lady/shocked lady
+
+[w]
+WHAT THE ****.
+
+switchCamera Barkeep 0.1
+
+show barkeep/angry barkeep
+
+[b]
+Sir, please, there’s no need to-
+
+switchCamera Idle 0.1
+
+[r]
+I DIDN’T FART, DAMMIT! IT WASN’T ME!
+
+[j]
+OKAY, OKAY! WE BELIEVE YOU. JUST PUT THE GUN DOWN!
+
+switchCamera Idle 0.1
+
+playSfx gunClick
+
+[r]
+NEVER! MY DIGNITY IS AT STAKE.
+
+switchCamera OldMan 0.1
+
+[p]
+HE’S GONNA SHOOT!
+
+switchCamera Lady 0.1
+
+[w]
+SOMEONE HELP!!
+
+switchCamera Jock 0.1
+
+show jock/crying jock
+
+[j]
+MOMMYYYYYYYY!!!
+
+switchCamera Idle 0.15
+
+[r]
+GRAAAAAGGGHHH-
+
+playSfx tableHit
+
+stopBgm
+
+null
+*pow*!!
+
+hideCanvas
+
+switchCamera Black 2
+
+wait 2.5
+
+showCanvas
+
+null
+...
+
+hideCanvas
+
+switchCamera Barkeep 2
+
+wait 2
+
+showCanvas
+
+playBgm jazz_bar
+
+[r]
+Ohhh... what happened?
+
+[b]
+I knocked you out and confiscated your weapon.
+
+show barkeep/muscles barkeep
+
+[b]
+Also, the police are coming.
+
+[r]
+Oh.
+
+[r]
+****.
+
+stopBgm
+
+switchCamera Black 2
+
+hideCanvas
+
+wait 1.5
+
+showCanvas
+
+null
+...
+
+null
+That coulda gone better.
+
+hideCanvas
+
+switchCamera Black 2
+
+wait 3.5
+
+loadScene MainMenu

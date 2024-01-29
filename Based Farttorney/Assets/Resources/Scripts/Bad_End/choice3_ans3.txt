@@ -1,5 +1,7 @@
 // Choice: I have a medical condition that prevents me from farting *fart*
 
+playSfx fart01
+
 switchCamera Idle
 
 show jock/idle jock
@@ -35,7 +37,7 @@ show oldman/perv oldman
 [p]
 *inhales deeply*
 
-showCamera Idle 0.15
+switchCamera Idle 0.15
 
 show jock/accusing jock
 

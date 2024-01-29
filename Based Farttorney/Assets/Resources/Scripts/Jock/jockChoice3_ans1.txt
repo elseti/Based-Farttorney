@@ -157,6 +157,6 @@ wait 3
 
 switchCamera Black 2
 
-wait 3.5
+wait 3
 
 loadScene MainMenu

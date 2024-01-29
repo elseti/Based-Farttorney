@@ -35,4 +35,4 @@ playBgm thinking
 [r]
 I was wondering where my Attorney’s badge went off to. And then it hit me.
 
-choice Another fart! *fart*:Scripts/Bad_End/fart | My badge was stolen!:Scripts/OldMan/oldManChoice2_ans2 | My badge never existed!:Scripts/Bad_End/vomit
+choice Another fart! *fart*:Scripts/OldMan/oldManChoice2_ans1 | My badge was stolen!:Scripts/OldMan/oldManChoice2_ans2 | My badge never existed!:Scripts/OldMan/oldManChoice2_ans3

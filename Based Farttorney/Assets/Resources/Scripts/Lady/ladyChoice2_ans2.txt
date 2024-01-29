@@ -1,0 +1,117 @@
+// Choice: To work!
+
+switchCamera Lady
+
+show lady/stressed lady
+
+[w]
+Uh, no. That’s not why I’m here.
+
+[r]
+You sure? Coulda sworn that’s why you said you were here.
+
+[w]
+Does it look like I’m working? I’m sitting alone at the bar.
+
+[r]
+Oh, but you are working. Working your magic, that is!
+
+show lady/judge lady
+
+[w]
+What.
+
+[r]
+See, your job is actually... a secret assassin! Your target was the bartender.
+
+[b]
+What.
+
+[r]
+You’re actually a specialized hitman - or hitwoman, mind you - and your secret weapon? Deadly farts.
+
+show lady/happy lady
+
+[w]
+Psh... that’s silly...
+
+[r]
+You tried to get him killed by unleashing a nasty, wet one right in his direction! But you got caught cos it was too loud, and now you’re trying to pin it all on me!
+
+switchCamera Jock
+
+show jock/cocky jock
+
+[j]
+Daaaaamn!
+
+switchCamera Lady
+
+show lady/stressed lady
+
+[w]
+This is... ridiculous.
+
+[r]
+Is it, really? Is it?
+
+[w]
+Yeah, I mean... get real. 
+
+[w]
+If I were a secret assassin, which I’m not, what makes you think I’d choose such a nonsensical method of murder?
+
+show lady/cocky lady
+
+[w]
+Obviously, if I wanted to kill the bartender, I’d offer to buy him a drink, slip one of the cyanide pills in my purse into it when he isn’t looking, toast him, down my drink and immediately leave-
+
+[w]
+-wait until he collapses, head back inside, loot his body, make off with all the money in the cash register, take a taxi to the airport and get on the next flight to Paris, all within the hour.
+
+show lady/stressed lady
+
+[w]
+But, since I haven’t done all that, I’m clearly not a secret assassin.
+
+[r]
+Wow, you really gave that random scenario a lot of thought, huh?
+
+switchCamera Barkeep
+
+show barkeep/sad barkeep
+
+[b]
+Unnervingly well-thought out plans to murder me aside... the lady did clearly state she was not here for work.
+
+show barkeep/muscles barkeep
+
+[b]
+If you have nothing more to add to your defense, sir, I’m gonna have to ask you to leave.
+
+[r]
+Ah, crap.
+
+playSfx fart_reverb_1
+
+stopBgm
+
+switchCamera Black 0
+
+hideCanvas
+
+wait 1.5
+
+null
+...
+
+null
+That coulda gone better.
+
+hideCanvas
+
+switchCamera Black 2
+
+wait 3.5
+
+loadScene MainMenu

@@ -27,4 +27,4 @@ Nuh-uh. I’m completely lucid. And sober, don’t forget how sober I am.
 [r]
 You see, I kept wondering about something you said, ma’am. You said you came into this bar…
 
-choice To relax!:Scripts/Lady/ladyChoice2_ans1 | To work!:Scripts/Bad_End/vomit | To fart!:Scripts/Bad_End/fart
+choice To relax!:Scripts/Lady/ladyChoice2_ans1 | To work!:Scripts/Lady/ladyChoice2_ans2 | To fart!:Scripts/Lady/ladyChoice2_ans3

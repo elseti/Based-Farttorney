@@ -1,0 +1,112 @@
+// Choice: Two beefy boys
+
+[r]
+That’s clearly sexist. Why did he call his muscles “boys”?
+
+[r]
+Girls can be muscles too! #AllMusclesAreGirls
+
+switchCamera Lady
+
+show lady/stressed lady
+
+[w]
+What.
+
+[r]
+He’s a sexist, and only sexists are capable of producing such nasty farts.
+
+switchCamera Jock
+
+show jock/idle jock
+
+[j]
+That doesn’t...
+
+switchCamera Idle 1
+
+[r]
+Observe. Would a non-sexist like me be capable of producing a fart like this? 
+
+playSfx fart02
+
+[r]
+*fart*
+
+show lady/shocked lady
+
+show barkeep/stern barkeep
+
+show oldman/shocked oldman
+
+[w]
+WHAT THE HELL.
+
+playSfx fart01
+
+[r]
+See? I couldn’t do that. So clearly, it was the sexist old man that farted! *fart*
+
+show lady/judge lady
+
+[w]
+YOU JUST FARTED AGAIN.
+
+playSfx fart02
+
+[r]
+Yeah *fart* but that doesn’t mean it was me the first time. *fart*
+
+show lady/stressed lady
+
+[w]
+AND YOU’RE STILL FARTING.
+
+show oldman/perv oldman
+
+[p]
+*inhales deeply*
+
+show jock/angry jock
+
+[j]
+Dude. What the **** is wrong with you?
+
+[w]
+I’m surrounded by lunatics.
+
+playSfx fart01
+
+[r]
+No, wait. *fart* Please, I can explain!
+
+switchCamera Barkeep 0.15
+
+show barkeep/muscles barkeep
+
+[b]
+GEEEEET OUT!!
+
+playSfx fart_reverb_1
+
+stopBgm
+
+switchCamera Black 0
+
+hideCanvas
+
+wait 1.5
+
+null
+...
+
+null
+That coulda gone better.
+
+hideCanvas
+
+switchCamera Black 2
+
+wait 3.5
+
+loadScene MainMenu

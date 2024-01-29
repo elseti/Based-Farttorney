@@ -1,0 +1,57 @@
+// Choice: This piece of gum! // The bartender’s mustache! 
+
+switchCamera Idle
+
+show jock/cocky jock
+
+[j]
+What is blud waffling about?
+
+show lady/judge lady
+
+[w]
+He’s completely lost his mind.
+
+[r]
+Nuh-uh. See, this actually tells us the whole story! Isn’t it obvious?
+
+show barkeep/stern barkeep
+
+[b]
+No, it’s not.
+
+switchCamera Barkeep 0.4
+
+show barkeep/muscles barkeep
+
+[b]
+Sir, I’m gonna have to ask you to leave if you aren’t going to properly defend yourself.
+
+[r]
+Ah, crap.
+
+playSfx fart_reverb_1
+
+stopBgm
+
+switchCamera Black 0
+
+hideCanvas
+
+wait 1.5
+
+showCanvas
+
+null
+...
+
+null
+That coulda gone better.
+
+hideCanvas
+
+switchCamera Black 2
+
+wait 3.5
+
+loadScene MainMenu

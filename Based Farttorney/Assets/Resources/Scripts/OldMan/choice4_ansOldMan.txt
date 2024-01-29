@@ -112,6 +112,4 @@ Aha! But little does he know I can literally pull evidence... OUT OF MY ***.
 [r]
 Observe! This crucial piece of evidence that points to you is...
 
-stopBgm
-
-choice The smell of the fart!:Scripts/Bad_End/fart | This piece of gum!:Scripts/OldMan/oldManChoice1_ans2 | The bartender’s mustache!:Scripts/Bad_End/vomit
+choice The smell of the fart!:Scripts/Bad_End/crappyDefense | This piece of gum!:Scripts/OldMan/oldManChoice1_ans2 | The bartender’s mustache!:Scripts/Bad_End/crappyDefense

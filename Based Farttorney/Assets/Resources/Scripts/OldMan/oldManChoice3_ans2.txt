@@ -1,5 +1,3 @@
-playBgm energetic
-
 [r]
 Only people with terrible breath would chew gum this strong, and your breath smells even worse than the fart.
 
@@ -37,7 +35,7 @@ show oldman/angry oldman
 [r]
 And I’ll bet you stole my Attorney’s badge to show off to her too. Didn’t you?
 
-stopBgm
+playBgm thinking
 
 [p]
 This is a ludicrous accusation! I don’t need some stupid badge. I got guns!
@@ -67,4 +65,4 @@ That’s what?
 [r]
 Did you all hear what he said? He said...
 
-choice Two beefy boys:Scripts/Bad_End/vomit | Tiny golden pin:Scripts/OldMan/oldManChoice4_ans2 | I got guns:Scripts/Bad_End/fart
+choice Two beefy boys:Scripts/OldMan/oldManChoice4_ans1 | Tiny golden pin:Scripts/OldMan/oldManChoice4_ans2 | I got guns:Scripts/OldMan/oldManChoice4_ans3
