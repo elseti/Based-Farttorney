@@ -616,7 +616,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!1 &254190333
 GameObject:
@@ -3668,7 +3668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d475fcf2b690b48a28acbbabdb982ae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueTextPath: Scripts/Act_1/scene_1
+  dialogueTextPath: Scripts/Act_1/choice3_ans1
   dialogueConstants: {fileID: 11400000, guid: b407b08378cd043f1a3b6d9290f6bd45, type: 2}
   dialogueVariableText: {fileID: 4900000, guid: d59ff553eaf14bf09a1b54129d36e807,
     type: 3}

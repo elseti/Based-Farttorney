@@ -1,0 +1,36 @@
+// Choice: The bartender!
+
+switchCamera Barkeep
+
+show barkeep/angry barkeep
+
+[b]
+Get out.
+
+[r]
+Whoa, what. Wait, I haven’t even gotten the chance to defend my-
+
+show barkeep/muscles barkeep
+
+[b]
+GEEEEET OUT!!
+
+playSfx fart_reverb_1
+
+stopBgm
+
+switchCamera Black 0
+
+null
+...
+
+null
+That coulda gone better.
+
+hideCanvas
+
+switchCamera Black 2
+
+wait 3.5
+
+loadScene MainMenu

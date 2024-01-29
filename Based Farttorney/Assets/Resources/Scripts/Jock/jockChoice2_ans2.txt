@@ -9,4 +9,4 @@ The culprit consumed something apple-flavored before committing the crime!
 [r]
 But wait. This bar doesn’t serve apple pie. But you know what they do serve?
 
-choice Apple cider!:Scripts/Jock/jockChoice3_ans1 | Beer!:Scripts/Bad_End/vomit | These farts!:Scripts/Bad_End/fart
+choice Apple cider!:Scripts/Jock/jockChoice3_ans1 | Beer!:Scripts/Jock/jockChoice3_ans2 | These farts!:Scripts/Jock/jockChoice3_ans3

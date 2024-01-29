@@ -86,4 +86,4 @@ switchCamera Idle
 [r]
 That doesn’t prove anything! After all...
 
-choice All three of you were here too!:Scripts/Act_1/choice3_ans1 | How can you hear anything over this bussin’ music?:Scripts/Bad_End/vomit | I have a medical condition that prevents me from farting *fart*:Scripts/Bad_End/fart
+choice All three of you were here too!:Scripts/Act_1/choice3_ans1 | How can you hear anything over this bussin’ music?:Scripts/Bad_End/choice3_ans2 | I have a medical condition that prevents me from farting *fart*:Scripts/Bad_End/choice3_ans3

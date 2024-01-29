@@ -1,0 +1,75 @@
+// Choice: Beer!
+
+switchCamera Idle
+
+show lady/judge lady
+
+[w]
+O... kay? So?
+
+[r]
+So... that means... um...
+
+[r]
+...
+
+[r]
+I lost my train of thought.
+
+show jock/angry jock
+
+[j]
+Great defense, bro.
+
+[r]
+Thanks!
+
+[j]
+I couldn’t have been more clearly sarcastic.
+
+show lady/stressed lady
+
+[w]
+So, that’s it? That’s your grand defense?
+
+[r]
+Well, I mean... I have more to say, if you’ll just give me a bit more time to get my case together.
+
+show lady/judge lady
+
+[w]
+Not necessary. Barkeep!
+
+switchCamera Barkeep 0.15
+
+show barkeep/muscles barkeep
+
+[b]
+If you have nothing more to say in your defense, I’m afraid I’m gonna have to ask you to leave, sir.
+
+[r]
+Ah, crap.
+
+playSfx fart_reverb_1
+
+stopBgm
+
+switchCamera Black 0
+
+hideCanvas
+
+wait 1.5
+
+null
+...
+
+null
+That coulda gone better.
+
+hideCanvas
+
+switchCamera Black 2
+
+wait 3.5
+
+loadScene MainMenu

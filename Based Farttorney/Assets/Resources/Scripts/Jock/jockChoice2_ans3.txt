@@ -1,0 +1,96 @@
+// Choice: Roast chicken!
+
+showCamera Idle
+
+show lady/judge lady
+
+[w]
+That doesn’t seem right.
+
+show jock/idle jock
+
+[j]
+Yeah, wasn’t it some fruity kinda smell? Not... that... I was smelling it on purpose or anything...
+
+show oldman/idle oldman
+
+[p]
+I was! I can’t remember what it smelled like though...
+
+playSfx fart02
+
+[r]
+I can help jog your memory! *fart*
+
+show lady/disgusted lady
+
+[w]
+WHAT THE HELL.
+
+[r]
+Ohhh yeah *inhales deeply* that’s the stuff.
+
+show jock/accusing jock
+
+[j]
+Did he just-
+
+[r]
+I’m getting hints of... what’s that smell, cherry? No, pear.
+
+show oldman/idle oldman
+
+[p]
+Pear? Don’t be silly *sniffs* that’s not pear, it’s something else. What was it again?
+
+show lady/stressed lady
+
+[w]
+STOP SNIFFING EACH OTHER’S FARTS.
+
+show oldman/shocked oldman
+
+[p]
+APPLE! That’s what it is!
+
+[r]
+Oh yeah, right! It’s apple. Anyway, as I was saying, there were hints of apple in the fart, which means-
+
+show lady/judge lady
+
+[w]
+BARKEEP! HE JUST FARTED. TWICE. GET HIM OUTTA HERE!
+
+[r]
+W-Wait! Please, I can explain. I-
+
+switchCamera Barkeep 0.15
+
+show barkeep/muscles barkeep
+
+[b]
+GEEEEET OUT!!
+
+playSfx fart_reverb_1
+
+stopBgm
+
+switchCamera Black 0
+
+hideCanvas
+
+wait 1.5
+
+null
+...
+
+null
+That coulda gone better.
+
+hideCanvas
+
+switchCamera Black 2
+
+wait 3.5
+
+loadScene MainMenu

@@ -1,0 +1,58 @@
+// Choice: How can you hear anything over this bussin’ music?
+
+switchCamera Jock
+
+show jock/cocky jock
+
+[j]
+The music is pretty bussin’. No cap, on God, fr fr. 
+
+switchCamera Lady
+
+show lady/judge lady
+
+[w]
+That’s how LOUD your fart was. It was so loud, we literally had our own *record scratch* moment and everyone stopped dancing to stare at you.
+
+[r]
+Wow. I didn’t know my fart was THAT powerful.
+
+switchCamera Jock 0.1
+
+show jock/accusing jock
+
+[j]
+So you admit it was you!
+
+[r]
+Huh? No, wait, I take it back-
+
+[j]
+Nuh-uh! No takesies backsies. Barkeep, get ‘im outta here!
+
+switchCamera Barkeep 0.4
+
+show barkeep/muscles barkeep
+
+[b]
+Sorry, sir. I’m gonna have to ask you to leave.
+
+[r]
+Ah, crap.
+
+stopBgm
+
+playSfx thunder
+
+switchCamera Black 0
+
+null
+That coulda gone better.
+
+hideCanvas
+
+switchCamera Black 2
+
+wait 3.5
+
+loadScene MainMenu

@@ -1,0 +1,116 @@
+// Choice: Rotten eggs!
+
+switchCamera Jock
+
+show jock/accusing jock
+
+[j]
+Ain’t that what all farts smell like?
+
+switchCamera OldMan
+
+show oldman/idle oldman
+
+[p]
+No, no, there’s subtle differences in every fart depending on what you eat. Haven’t you ever sniffed them yourself?
+
+switchCamera Jock
+
+show jock/angry jock
+
+[j]
+Dude, no one here is relating to you right now.
+
+switchCamera Lady
+
+show lady/stressed lady
+
+[w]
+I can’t believe I’m spending my Friday night listening to this.
+
+switchCamera OldMan
+
+show oldman/perv oldman
+
+[p]
+At any rate, it wasn’t just a rotten-egg smell. This fart had a special scent to it… something almost fruity in nature… I can’t quite recall…
+
+switchCamera Idle 0.3
+
+playSfx fart02
+
+[r]
+I can help jog your memory! *fart*
+
+show lady/disgusted lady
+
+[w]
+WHAT THE HELL.
+
+[r]
+Ohhh yeah *inhales deeply* that’s the stuff.
+
+show jock/accusing jock
+
+[j]
+Did he just-
+
+[r]
+I’m getting hints of… what’s that smell, cherry? No, pear.
+
+show oldman/idle oldman
+
+[p]
+Pear? Don’t be silly *sniffs* that’s not pear, it’s something else. What was it again?
+
+show lady/stressed lady
+
+[w]
+STOP SNIFFING EACH OTHER’S FARTS.
+
+show oldman/shocked oldman
+
+[p]
+APPLE! That’s what it is!
+
+[r]
+Oh yeah, right! It’s apple. Anyway, as I was saying, there were hints of apple in the fart, which means-
+
+show lady/judge lady
+
+[w]
+BARKEEP! HE JUST FARTED. TWICE. GET HIM OUTTA HERE!
+
+[r]
+W-Wait! Please, I can explain. I-
+
+switchCamera Barkeep 0.15
+
+show barkeep/muscles barkeep
+
+[b]
+GEEEEET OUT!!
+
+playSfx fart_reverb_1
+
+stopBgm
+
+switchCamera Black 0
+
+hideCanvas
+
+wait 1.5
+
+null
+...
+
+null
+That coulda gone better.
+
+hideCanvas
+
+switchCamera Black 2
+
+wait 3.5
+
+loadScene MainMenu

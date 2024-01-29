@@ -1,0 +1,74 @@
+// Choice: These farts! *fart*
+
+switchCamera Idle
+
+show lady/judge lady
+
+playSfx fart02
+
+[r]
+*farts*
+
+[w]
+WHAT THE HELL.
+
+[r]
+Ohhh yeah *inhales deeply* that’s the stuff.
+
+show jock/accusing jock
+
+[j]
+Did he just-
+
+[r]
+They’re free too! Not overpriced, like these drinks.
+
+show barkeep/stern barkeep
+
+[b]
+...
+
+show oldman/perv oldman
+
+[p]
+Lemme get in on that! *sniffs*
+
+show jock/angry jock
+
+[j]
+Dude. What the **** is wrong with you?
+
+show lady/stressed lady
+
+[w]
+I’m surrounded by lunatics.
+
+[r]
+*fart* Ooh, that’s nice. Wait, what was I talking about again?
+
+[b]
+GEEEEET OUT!!
+
+playSfx fart_reverb_1
+
+stopBgm
+
+switchCamera Black 0
+
+hideCanvas
+
+wait 1.5
+
+null
+...
+
+null
+That coulda gone better.
+
+hideCanvas
+
+switchCamera Black 2
+
+wait 3.5
+
+loadScene MainMenu

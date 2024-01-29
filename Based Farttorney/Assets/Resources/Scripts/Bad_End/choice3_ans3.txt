@@ -1,0 +1,86 @@
+// Choice: I have a medical condition that prevents me from farting *fart*
+
+switchCamera Idle
+
+show jock/idle jock
+
+show oldman/idle oldman
+
+switchCamera Lady 0.15
+
+show lady/disgusted lady
+
+[w]
+You LITERALLY just farted!
+
+playSfx fart02
+
+[r]
+Whaaat? *fart* Nooooo… that’s impossible! Didn’t you just hear me say it was impossible for me to fart?
+
+show lady/stressed lady
+
+[w]
+AND YOU’RE STILL FARTING.
+
+playSfx fart02
+
+[r]
+I don’t know what you’re talking about. *fart* I think all that fart-smell is driving you delusional.
+
+switchCamera OldMan
+
+show oldman/perv oldman
+
+[p]
+*inhales deeply*
+
+showCamera Idle 0.15
+
+show jock/accusing jock
+
+[j]
+Dude. What the **** is wrong with you?
+
+[w]
+I’m surrounded by lunatics.
+
+playSfx fart02
+
+[r]
+Seriously, guys. I don’t know what it is you’re hearing or smelling, but it ain’t me. Just ask my doctor! *fart*
+
+show lady/judge lady
+
+[w]
+Barkeep, please! Get him out of here before he kills us all!
+
+[r]
+No, wait, please-
+
+switchCamera Barkeep
+
+show barkeep/muscles barkeep
+
+[b]
+GEEEEET OUT!!
+
+playSfx fart_reverb_1
+
+switchCamera Black 0
+
+null
+...
+
+null
+That coulda gone better.
+
+stopBgm
+
+hideCanvas
+
+switchCamera Black 2
+
+wait 3.5
+
+loadScene MainMenu

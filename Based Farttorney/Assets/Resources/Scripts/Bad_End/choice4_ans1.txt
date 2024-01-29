@@ -1,0 +1,50 @@
+// Choice: ME *fart*
+
+playBgm energetic
+
+show lady/shocked lady
+
+[w]
+What.
+
+show jock/accusing jock
+
+[j]
+He did it! He did the thing!
+
+playSfx fart02
+
+[r]
+THAT’S RIGHT. I’M THE ONE WHO FARTED *fart* AND I’D DO IT AGAIN.
+
+show lady/judge lady
+
+[w]
+Bartender!
+
+switchCamera Barkeep
+
+show barkeep/muscles barkeep
+
+[b]
+GEEEEET OUT!!
+
+playSfx fart_reverb_1
+
+stopBgm
+
+switchCamera Black 0
+
+null
+...
+
+null
+That coulda gone better.
+
+hideCanvas
+
+switchCamera Black 2
+
+wait 3.5
+
+loadScene MainMenu
