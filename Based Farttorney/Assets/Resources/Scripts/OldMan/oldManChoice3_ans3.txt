@@ -1,5 +1,7 @@
 // Choice: I said so
 
+playBgm energetic
+
 switchCamera OldMan
 
 show oldman/perv oldman
@@ -59,6 +61,6 @@ hideCanvas
 
 switchCamera Black 2
 
-wait 3.5
+wait 3
 
 loadScene MainMenu

@@ -21,6 +21,8 @@ show lady/judge lady
 [w]
 What.
 
+playBgm thinking
+
 [r]
 See, your job is actually... a secret assassin! Your target was the bartender.
 
@@ -30,7 +32,7 @@ What.
 [r]
 You’re actually a specialized hitman - or hitwoman, mind you - and your secret weapon? Deadly farts.
 
-show lady/happy lady
+show lady/stressed lady
 
 [w]
 Psh... that’s silly...
@@ -47,13 +49,15 @@ Daaaaamn!
 
 switchCamera Lady
 
-show lady/stressed lady
+show lady/judge lady
 
 [w]
 This is... ridiculous.
 
 [r]
 Is it, really? Is it?
+
+show lady/stressed lady
 
 [w]
 Yeah, I mean... get real. 

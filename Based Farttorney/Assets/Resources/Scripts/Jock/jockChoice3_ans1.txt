@@ -84,9 +84,13 @@ playSfx runHall
 [j]
 *runs off*
 
+stopSfx
+
 hideCanvas
 
 switchCamera Lady 2
+
+show lady/stressed lady
 
 wait 2
 

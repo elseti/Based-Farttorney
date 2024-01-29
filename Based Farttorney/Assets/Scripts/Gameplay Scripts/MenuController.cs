@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 public class MenuController : MonoBehaviour
 {
     public string _gameScene;
-    public float _fadeDuration = 2.0f, _fadeDelay = 60.0f;
-    public GameObject _msgLose, _msgTryAgain, _btnTryAgain;
+    // public float _fadeDuration = 2.0f, _fadeDelay = 60.0f;
+    // public GameObject _msgLose, _msgTryAgain, _btnTryAgain;
     public AudioClip fartSfx;
     public AudioSource fartSource;
     public Animator cinemachineAnimator;

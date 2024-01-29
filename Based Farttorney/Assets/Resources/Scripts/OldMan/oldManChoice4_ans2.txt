@@ -73,13 +73,15 @@ Grr! You’re gonna pay for this! Mark my words...
 
 stopBgm
 
-hide oldman
-
 hideCanvas
 
 switchCamera Black 2
 
 wait 2
+
+hide oldman
+
+showCanvas
 
 null
 I watch as the bartender escorts the irate man out of the bar.
@@ -195,6 +197,6 @@ wait 3
 
 switchCamera Black 2
 
-wait 3.5
+wait 3
 
 loadScene MainMenu

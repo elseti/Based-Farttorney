@@ -4,7 +4,7 @@ Only people with terrible breath would chew gum this strong, and your breath sme
 [r]
 You’ve been hitting on that poor woman all evening long. No doubt a sleazy-
 
-switchCamera OldMan 0
+switchCamera OldMan 0.3
 
 show oldman/angry oldman
 

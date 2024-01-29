@@ -1,5 +1,7 @@
 // Choice: I tasted your saliva on it
 
+playBgm energetic
+
 switchCamera Lady 0.15
 
 show lady/disgusted lady
@@ -112,6 +114,6 @@ hideCanvas
 
 switchCamera Black 2
 
-wait 3.5
+wait 3
 
 loadScene MainMenu

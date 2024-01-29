@@ -1,5 +1,7 @@
 // Choice: Two beefy boys
 
+playBgm jazz_bar
+
 [r]
 That’s clearly sexist. Why did he call his muscles “boys”?
 
@@ -109,6 +111,6 @@ hideCanvas
 
 switchCamera Black 2
 
-wait 3.5
+wait 3
 
 loadScene MainMenu

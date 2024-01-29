@@ -1,13 +1,13 @@
 // Choice: I got guns
 
-stopBgm
-
 switchCamera Idle
 
 show jock/cocky jock
 
 [j]
 That was cringe as ****, sure, but what’s that got to do with-
+
+stopBgm
 
 show jock/idle jock
 
@@ -27,7 +27,9 @@ playSfx gunClick
 
 playBgm energetic
 
-switchCamera Lady 0.1
+switchCamera Lady 0.15
+
+show jock/accusing jock
 
 show lady/shocked lady
 
@@ -114,6 +116,8 @@ I knocked you out and confiscated your weapon.
 
 show barkeep/muscles barkeep
 
+stopBgm
+
 [b]
 Also, the police are coming.
 
@@ -122,8 +126,6 @@ Oh.
 
 [r]
 ****.
-
-stopBgm
 
 switchCamera Black 2
 

@@ -1,6 +1,8 @@
 // Choice: My badge never existed!
 
-showCamera Idle
+playBgm jazz_bar
+
+switchCamera Idle
 
 show lady/judge lady
 
@@ -60,6 +62,6 @@ hideCanvas
 
 switchCamera Black 2
 
-wait 3.5
+wait 3
 
 loadScene MainMenu

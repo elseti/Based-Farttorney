@@ -172,9 +172,9 @@ public class DialogueManager : Singleton<DialogueManager>
 
             }
         }
-        catch
+        catch(Exception error)
         {
-            Debug.Log("@NextDialogue: Error");
+            Debug.Log("@NextDialogue: Error " + error);
         }
         
     }
@@ -412,7 +412,7 @@ public class DialogueManager : Singleton<DialogueManager>
 
     public void PlaySound(AudioClip audioClip)
     {
-        audioManager.interfaceAudio.PlayOneShot(audioClip);
+        audioManager.sfxAudio.PlayOneShot(audioClip);
     }
 
     public void FadeOut(float time, bool wait = false)
